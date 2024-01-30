@@ -1,9 +1,7 @@
-# ├── main.py
-# └── calculator.py
-
-# Polymorphism is the practice of using a single interface to represent multiple types of objects. 
-# In Python, we can achieve polymorphism by using inheritance and method overriding. 
-# Here is an example of how we can use polymorphism to create a list of calculators 
+# Polymorphism
+# the practice of using a single interface to represent multiple types of objects. 
+# In Python, we combine inheritance and method overriding. 
+# Here is an example where we create a list of calculators 
 # that can perform different operations:
 
 class Calculator:

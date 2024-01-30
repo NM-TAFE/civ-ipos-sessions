@@ -1,9 +1,7 @@
-# ├── main.py
-# └── calculator.py
-
-# Abstraction is the practice of hiding the implementation details of a class from the outside world. 
-# In Python, we can achieve abstraction by using abstract classes and methods. 
-# Here is an example of how we can use abstraction to create an abstract class called AbstractCalculator:
+# Abstraction
+# the practice of hiding the implementation details of a class from the outside world. 
+# after creating the abstract class we can reuse abstract classes and methods. 
+# here is an example using an abstract class called AbstractCalculator:
 
 from abc import ABC, abstractmethod
 

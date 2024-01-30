@@ -1,9 +1,7 @@
-# ├── main.py
-# └── calculator.py
-
-# Inheritance is the practice of creating a new class from an existing class. 
+# Inheritance
+# the practice of creating a new class from an existing class. 
 # The new class inherits all the properties and methods of the existing class. 
-# Here is an example of how we can use inheritance to create a new class 
+# Here is an example where we create a new class 
 # called ScientificCalculator that inherits from the Calculator class:
 
 class Calculator:
