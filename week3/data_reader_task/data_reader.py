@@ -23,8 +23,10 @@ for sale in sales_data:
     product = sale['Product']
     revenue = sale['Total Revenue']
     product_revenue[product] = product_revenue.get(product, 0) + revenue
+
 # Task 3: Identify the product that generated the maximum revenue
 max_revenue_product = max(product_revenue, key=product_revenue.get)
+
 # Task 4: Calculate total revenue for each day
 date_revenue = {}
 
@@ -34,8 +36,8 @@ for sale in sales_data:
     date_revenue[date] = date_revenue.get(date, 0) + revenue
 # Task 5: Identify the day with the highest total revenue
 max_revenue_date = max(date_revenue, key=date_revenue.get)
-# Task 6: Calculate total units sold for each date
 
+# Task 6: Calculate total units sold for each date
 
 # Task 7: Identify the product with the highest total units sold
 
