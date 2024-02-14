@@ -1,10 +1,6 @@
 # Exercise 1: manually create a 2D data structure
-
 #        elem    0  1  2      row
-my_2dim_list = [[1, 2, 3],  # 0
-                [4, 5, 6],  # 1
-                [7, 8, 9]]  # 2
-print(my_2dim_list[0][0])
+
 
 # Exercise 2:
 # sequential iteration over 2D
