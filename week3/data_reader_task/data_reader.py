@@ -1,18 +1,40 @@
 import csv
 
 # Function to read data from CSV file
-
+def read_sales_data(filename):
 # Task 1: Read data from CSV file
+    sales_data = []
+    with open(filename, 'r', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            row['Units Sold'] = int(row['Units Sold'])
+            row['Unit Price'] = float(row['Unit Price'])
+            row['Total Revenue'] = float(row['Total Revenue'])
+            sales_data.append(row)
+
+    return sales_data
+
+sales_data =  read_sales_data('sales_data.csv')
 
 # Task 2: Calculate total revenue for each product
+product_revenue = {}
 
+for sale in sales_data:
+    product = sale['Product']
+    revenue = sale['Total Revenue']
+    product_revenue[product] = product_revenue.get(product, 0) + revenue
 # Task 3: Identify the product that generated the maximum revenue
-
+max_revenue_product = max(product_revenue, key=product_revenue.get)
 # Task 4: Calculate total revenue for each day
+date_revenue = {}
 
+for sale in sales_data:
+    date = sale['Date']
+    revenue = sale['Total Revenue']
+    date_revenue[date] = date_revenue.get(date, 0) + revenue
 # Task 5: Identify the day with the highest total revenue
-
-# Task 6: Calculate total units sold for each product
+max_revenue_date = max(date_revenue, key=date_revenue.get)
+# Task 6: Calculate total units sold for each date
 
 
 # Task 7: Identify the product with the highest total units sold

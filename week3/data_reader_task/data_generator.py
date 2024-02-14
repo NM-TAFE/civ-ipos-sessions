@@ -12,6 +12,7 @@ def random_date(start_date, end_date):
 products = ['Product A', 'Product B', 'Product C', 'Product D']
 start_date = datetime(2023, 1, 1)
 end_date = datetime(2023, 12, 31)
+
 sales_data = []
 
 for _ in range(100):  # Generate 100 sales records
