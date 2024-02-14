@@ -75,3 +75,18 @@ def make_2d_cool(rows, cols, value=None):
 
 # Optional
 # correct answer to initialising a list with sequential values
+
+## Numpy & Pandas examples
+# import numpy as numpy
+
+# arr = np.array([1,2,3],[4,5,6],[7,8,9])
+
+# arr2 = arr * 2
+
+# import pandas as pandas
+
+# df = pd.DataFrame({
+#     'A':[1,2,3],
+#     'B':[4,5,6],
+#     'C':[7,8,9]
+# })
