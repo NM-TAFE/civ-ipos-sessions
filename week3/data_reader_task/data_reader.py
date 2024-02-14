@@ -38,11 +38,17 @@ for sale in sales_data:
 max_revenue_date = max(date_revenue, key=date_revenue.get)
 
 # Task 6: Calculate total units sold for each date
+product_units_sold = {}
 
+for sale in sales_data:
+    product = sale['Product']
+    units_sold = sale['Units Sold']
+    product_units_sold[product] = product_units_sold.get(product, 0) + units_sold
 # Task 7: Identify the product with the highest total units sold
+max_units_sold_product = max(product_units_sold, key=product_units_sold.get)
 
 # Task 8: Calculate average unit price for each product
-
+product_unit_price
 # Display results
 print("Total revenue for each product:")
 for product, revenue in product_revenue.items():
@@ -65,6 +71,6 @@ for product, units_sold in product_units_sold.items():
 print("\nThe product with the highest total units sold:")
 print(max_units_sold_product)
 
-print("\nAverage unit price for each product:")
-for product, avg_price in product_unit_price.items():
-    print(f"{product}: ${avg_price:.2f}")
+# print("\nAverage unit price for each product:")
+# for product, avg_price in product_unit_price.items():
+#     print(f"{product}: ${avg_price:.2f}")
