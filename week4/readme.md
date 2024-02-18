@@ -3,7 +3,7 @@
 
 ## Lesson Duration: 4 hours
 
-## Lesson Topic: Unitesting, methods and mcoking
+## Lesson Topic: Unit testing, methods and mcoking
 ### Introduction to Unit Testing
 - Definition and purpose of unit testing.
 - Benefits of unit testing: improving code quality, easing refactoring, catching regressions, aiding in documentation, and providing a solid foundation for the software. 
