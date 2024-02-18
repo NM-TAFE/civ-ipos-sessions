@@ -2,6 +2,7 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
+<<<<<<< HEAD
     <orderEntry type="jdk" jdkName="Python 3.11" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
@@ -9,4 +10,9 @@
     <option name="format" value="GOOGLE" />
     <option name="myDocStringFormat" value="Google" />
   </component>
+=======
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+>>>>>>> 81bae7b9bfa8f91278bbdae8d2375c0214309300
 </module>
