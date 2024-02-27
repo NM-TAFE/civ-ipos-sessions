@@ -16,7 +16,10 @@ try:
       
 
             # Check if the line starts with "BYTES:"
-           
+        # Check if the line starts with "BYTES:"
+
+                # Extract the string and encode to hexadecimal
+            
                 # Extract byte content, convert to bytes object(using fromhex()), 
                 
                 # reverse bytes, and write to bytes file
