@@ -9,7 +9,7 @@
 - Read and print the first 8 bytes from the file.
 - Print the current file pointer position.
 - Use the find() method to search for the string "ABC" in the file. 
-- Print the -osition if found, otherwise print a message indicating it was not found.
+- Print the position if found, otherwise print a message indicating it was not found.
 
 
 ### Phase 2: Bookmarking File Pointer

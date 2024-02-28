@@ -3,22 +3,28 @@ def main():
         # Phase 1: File Navigation
         print("Phase 1: File Navigation")
         print("=======================")
-
+        with open("data.bin", "rb") as file:
             # Navigate to the 5th byte position
-
+            file.seek(4)
             # Read and print the next 4 bytes from the current position
-
+            print("Next 4 bytes form the position is 5: ", file.read(4).decode('utf-8'))
 
             # Move the file pointer to the beginning of the file
-
+            file.seek(0)
             # Read and print the first 8 bytes from the file
-
+            print("First 8 bytes form the file: ", file.read(8).decode('utf-8'))
 
             # Print the current file pointer position
-
+            print(f"Current position is: {file.tell()}")
 
             # Use the find() method to search for the string "ABC" in the file
+            file.seek(0)
+            position = file.read().find(b"ABC")
 
+            if position != -1:
+                 print(f"Position of ABC is: {position}")
+            else:
+                 print("String 'ABC' has not been found")
         
         print("\nPhase 2: Bookmarking File Pointer")
         print("=================================")
