@@ -56,7 +56,7 @@ def make_2d_cool(rows, cols, value=None):
 
 
     # Example 3
-    two_dim_list =  [[(i+1)*(j+1) for j in range(cols) for i in range(rows)]]
+    two_dim_list =  [[(i+1)*(j+1) for j in range(cols)] for i in range(rows)]
 
     # # Example 4
     # w, h = 3, 3
