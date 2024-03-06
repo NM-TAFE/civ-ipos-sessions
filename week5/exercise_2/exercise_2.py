@@ -1,5 +1,5 @@
 def main():
-    # try:
+    try:
         # Phase 1: File Navigation
         print("Phase 1: File Navigation")
         print("=======================")
@@ -29,20 +29,28 @@ def main():
         print("\nPhase 2: Bookmarking File Pointer")
         print("=================================")
         # Re-open the data.bin file in binary write-append mode
-     
+        with open("data.bin", "ab") as file:
             # Use the tell() method to get the current file pointer position and store it as a bookmark
-      
-
+            bookmark = file.tell()
+            print(f"Current position(bookmark): {bookmark}") 
 
             # Write the string "XYZ" to the file
-
+            file.write(b"XYZ")
 
             # Use the bookmarked pointer position to append the string "123" to the file
-   
+            file.seek(bookmark)
+            file.write(b"123")
 
     # create three non naked exception handlers for: 
-            # not finding the file, i/o error & all other exceptions
+    # not finding the file, i/o error & all other exceptions
+    except FileNotFoundError:
+        print(f"File not found: {file}")
+    
+    except IOError:
+        print("Unable to read or write to file")
 
+    except Exception as error:
+        print(f"An error occured {error}")
 
 if __name__ == "__main__":
     main()

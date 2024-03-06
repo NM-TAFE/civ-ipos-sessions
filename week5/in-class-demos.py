@@ -1,4 +1,4 @@
-# Slide 8
+# # Slide 8
 # # Open the file in binary mode to read bytes
 # with open("example.txt", "rb") as file:
 #     # Read the contents of the file as bytes
@@ -17,11 +17,11 @@
 #     for byte in bytes_data:
 #         print(hex(byte))
 
-# # Slide 14
-# binary_representation = ' '.join([bin(ord(c))[2:].zfill(8) for c in "Everything is Binary"])
-# print(binary_representation)
+# # # Slide 14
+# # binary_representation = ' '.join([bin(ord(c))[2:].zfill(8) for c in "Everything is Binary"])
+# # print(binary_representation)
 
-# # Simpler explanation of bytes
+# # # Simpler explanation of bytes
 # binary_representations = []
 
 # for c in "Everything is Binary":
@@ -46,15 +46,16 @@
 
 
 # Slide 20
-# # Define a Unicode string
-# unicode_str = "Hello, world!"
+# Define a Unicode string
+unicode_str = "Hello, world!"
 
-# # Encode the Unicode string using UTF-8 encoding
-# bytes_obj_utf8 = unicode_str.encode('utf-8')
+# Encode the Unicode string using UTF-8 encoding
+bytes_obj_utf8 = unicode_str.encode('utf-8')
 
-# # Decode the bytes object back to a Unicode string
-# decoded_str = bytes_obj_utf8.decode('utf-8')
+# Decode the bytes object back to a Unicode string
+decoded_str = bytes_obj_utf8.decode('utf-8')
 
+print()
 
 # # Convert integer 42 to a bytes object
 # bytes_42 = (42).to_bytes(1, byteorder='big') # b'*'
