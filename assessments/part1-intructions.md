@@ -1,5 +1,5 @@
 # Assessment Task: Project KBA
->
+
 > Maintenance of Open Source Projects
 
 **1.** Identify an open source target program requiring maintenance.
@@ -22,7 +22,7 @@
 - **Task**: Instead of downloading binaries, clone the project repository and set it up on your local machine.
 - **Instructions**: Describe the process you followed to set up the project, including any dependencies you installed. Highlight any challenges faced and how you overcame them. If you used instructions from the project's documentation, provide a link to the relevant section. If you did not, explain why you believe the project didn't have instructions for contributing.
 
-**5.** Access and analyze the supporting documentation of the target program.
+**5.** Access and analyse the supporting documentation of the target program.
 
 - **Task**: Dive deep into the project's documentation, focusing on setup instructions, contribution guidelines, and code of conduct.
 - **Instructions**: Provide insights and key takeaways from the documentation. Mention any gaps or areas of improvement you identified.
@@ -37,16 +37,16 @@
 - **Task**: Execute the project on your local machine, ensuring it runs as expected.
 - **Instructions**: Detail the steps you took to run the project and any challenges faced. If there were deviations from the documentation or additional steps required, document those as well.
 
-**8.** Analyze the project's issue database.
+**8.** Analyse the project's issue database.
 
-- **Task**: Explore the project's issues or bug database. Prioritize bugs or tasks labeled as "good first issues" or "beginner-friendly."
-- **Instructions**: What system does the project use to track issues? What are some labels you identified that are relevant. Provide screenshots of the bugs and tasks you've identified. Describe your criteria for selection and any filters or tags you used to prioritize them.
+- **Task**: Explore the project's issues or bug database. Prioritise bugs or tasks labeled as "good first issues" or "beginner-friendly."
+- **Instructions**: What system does the project use to track issues? What are some labels you identified that are relevant. Provide screenshots of the bugs and tasks you've identified. Describe your criteria for selection and any filters or tags you used to prioritise them.
 
-**9.** Familiarize yourself with the project's development tools and environment.
+**9.** Familiarise yourself with the project's development tools and environment.
 
 - **Task**: Understand and set up any tools or environments essential for the project, such as virtual environments, linters, or testing frameworks.
 - **Instructions**: Detail the tools and environments you used during this process. Highlight any challenges faced and how you addressed them. What CI/CD tools does the project use? What are the project's testing requirements? What are the project's linting requirements?
 
 ---
 
-Please ensure that all instructions are followed carefully, and submissions are well-organized, clearly labeled, and accompanied by any necessary explanations or justifications. Best of luck with your open-source contributions!
+Please ensure that all instructions are followed carefully, and submissions are well-organised, clearly labeled, and accompanied by any necessary explanations or justifications. Best of luck with your open-source contributions!

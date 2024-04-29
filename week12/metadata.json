@@ -1,0 +1,11 @@
+{
+  "name": "numpy",
+  "version": "1.21.0",
+  "summary": "NumPy is the fundamental package for array computing with Python.",
+  "author": "Travis E. Oliphant et al.",
+  "author-email": null,
+  "home-page": "https://www.numpy.org",
+  "license": "BSD",
+  "requires-python": ">=3.7",
+  "description": "..."
+}
