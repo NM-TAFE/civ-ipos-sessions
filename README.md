@@ -12,7 +12,7 @@ Note: not a general development workflow, just a useful way to work with this (c
 
 ```bash
 git clone https://github.com/NM-TAFE/<this repo>
-cd civ-ipriot-in-class-demos
+cd civ-ipos-sessions
 ```
 
 2. If you want to experiment with the code locally, create a new branch:
