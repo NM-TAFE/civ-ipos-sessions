@@ -1,5 +1,5 @@
 # Debugging and Documentation techniques
->
+
 > ICTPRG443 – Apply Intermediate Programming Skills in Different Languages – Delivered as part of IPOS cluster
 
 ## Goals
@@ -94,15 +94,7 @@
 - **Perform Documentation Workshop**
   - Follow the activities and lessons provided [here](https://coderefinery.github.io/documentation/). This will give hands-on experience in generating and understanding documentation.
 
-
----
----
-
-## Development Notes
->
-> This section provides lecturers and auditors an opportunity to contextualize the lesson in the UoC requirements.
-
-
+--
 
 ### Relation to Unit of Competency (UoC) - ICTPRG443
 
@@ -110,13 +102,10 @@ This lesson is tailored to address key aspects of the UoC, ICTPRG443 - Apply Int
 
 - **3.1 Use stand-alone debugging tools and tools provided by integrated development environment (IDE)**
   - Addressed in the section on "Debugging Techniques & Tools", emphasizing the use of IDE-based debugging tools and other stand-alone tools.
-  
 - **3.2 Trace code execution and examine variable contents using debugger**
   - Covered during the "Hands-on Debugging Activity" where students interact with breakpoints, trace code execution, and inspect variable values.
-  
 - **3.3 Develop and document maintainable code according to organisational guidelines and coding standards**
   - The emphasis on "Documentation in Software Development" underscores the importance of maintaining code with clear documentation, aligning with organizational guidelines.
-  
 - **3.4 Apply internal documentation to code using documentation tools available in target language**
   - Addressed in the "Documentation Generation" section, specifically during the Sphinx for Python Workshop, where students learn to generate internal documentation.
 
