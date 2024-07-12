@@ -8,17 +8,18 @@
 
 
 # #example 2
-# import os
+import os
 
-# def get_path(filename):
-#     """Return file's path or empty string if no path."""
-#     head, tail = os.path.split(filename)
-#     import pdb; pdb.set_trace()
-#     return head
+def get_path(filename):
+    """Return file's path or empty string if no path."""
+    head, tail = os.path.split(filename)
+    # import pdb; pdb.set_trace()
+    breakpoint()
+    return head
 
 
-# filename = __file__
-# print(f'path = {get_path(filename)}')
+filename = __file__
+print(f'path = {get_path(filename)}')
 
 # example 3 - n, s, path, l, ll
 # import os

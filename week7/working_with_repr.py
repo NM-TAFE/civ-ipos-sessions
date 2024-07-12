@@ -1,12 +1,15 @@
 # The __str__ method returns a string representation of an object that is human-readable while the __repr__ method returns a string representation of an object that is machine-readable.
 
 # In debugging, you can use __repr__ to provide more meaningful information about the state of an object 
-# when you print it or inspect it during debugging sessions. For instance, if you have a complex object and you want to see its internal state while debugging, you can define a __repr__ method that provides a concise and informative string representation of that object
+# when you print it or inspect it during debugging sessions. For instance, 
+# if you have a complex object and you want to see its internal state while debugging, 
+# you can define a __repr__ method that provides a concise and informative string representation of that object
 
 class Cat:
     def __init__(self, name):
         self.name = name
-    # The __str__ method returns a fixed string '🐈', which will be used when you directly print the object or use str() function on it.
+    # The __str__ method returns a fixed string '🐈', which will be used when you directly 
+        # print the object or use str() function on it.
     def __str__(self):
         return '🐈' # can be anything that makes sense
 
