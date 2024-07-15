@@ -1,5 +1,5 @@
 ### Use - uncomment the relevent block to use the particular OOP Pillars file
-## ----- prodecural -----
+## ----- procedural -----
 def add(a, b):
     return a + b
 
@@ -16,7 +16,8 @@ print(add(a, b))
 print(subtract(a, b))
 print(multiply(a, b))
 
-## ----- encapsulation -----
+## Workshop Refactoring for OOP
+# ----- encapsulation -----
 # from encapsulation import Calculator, ScientificCalculator
 
 
