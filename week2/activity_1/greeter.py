@@ -1,7 +1,8 @@
 '''Considering reuse (modularisation)
 when creating python programs'''
 
-
+def greet():
+    print("Hello, world!")
 
 # Additional activity - create a calculator class and re-use this by instantiating it in the main.py
 

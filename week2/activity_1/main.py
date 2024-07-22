@@ -1,6 +1,7 @@
 '''different ways to reuse the same code
 as a module'''
 
+import greeter
 
 # use an alias - consider why might we do this?
 
@@ -15,3 +16,5 @@ as a module'''
 
 
 print(f"Result of addition: ")
+
+greeter.greet()
