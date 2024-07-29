@@ -24,7 +24,7 @@ for _ in range(100):  # Generate 100 sales records
     sales_data.append([date, product, units_sold, unit_price, total_revenue])
 
 # Write data to CSV file
-with open('sales_data.csv', 'w', newline='') as csvfile:
+with open('sales_data_v2.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(['Date', 'Product', 'Units Sold', 'Unit Price', 'Total Revenue'])
     writer.writerows(sales_data)

@@ -1,13 +1,16 @@
+import numpy as np
+
+import pandas as pd
+
 # Exercise 1: manually create a 2D data structure
 #        elem    0  1  2      row
-my_2dim_list = [[0,1,2],  #0
-                [4,5,6],  #1
-                [7,8,9]   #2
-]
+my_2dim_list = [[0, 1, 2],  # 0
+                [4, 5, 6],  # 1
+                [7, 8, 9]  # 2
+                ]
 
 print(my_2dim_list[0])
 print(my_2dim_list[0][0])
-
 
 # Exercise 2:
 # sequential iteration over 2D
@@ -35,7 +38,6 @@ def make_2d(rows, cols, value=None):
     return list_2d
 
 
-
 # Exercise 3a:
 # Refactor to list comprehension
 def make_2d_cool(rows, cols, value=None):
@@ -49,11 +51,10 @@ def make_2d_cool(rows, cols, value=None):
 
     # # Example 2 - add watch statements
     # for i in range(rows):
-    #     row = [(i+1)*(j+1)for j in range(cols)]
+    #     row = [(i + 1) * (j + 1) for j in range(cols)]
     #     two_dim_list.append(row)
 
     # return two_dim_list
-
 
     # Example 3
     two_dim_list =  [[(i+1)*(j+1) for j in range(cols)] for i in range(rows)]
@@ -66,27 +67,26 @@ def make_2d_cool(rows, cols, value=None):
     # print(two_dim_list)
     return two_dim_list
 
+
 # Drive the code above...
-# print('#'*50)
-# print(make_2d_cool(3, 3, 11))
-# print('#'*50)
+print('#'*50)
+print(make_2d_cool(3, 3, 11))
+print('#'*50)
 # print(make_2d(3, 3, 42))
 # print(make_2d(3, 3))
 
 # Optional
 # correct answer to initialising a list with sequential values
 
-## Numpy & Pandas examples
-# import numpy as numpy
+# Numpy & Pandas examples - view in Pycharm
+arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-# arr = np.array([1,2,3],[4,5,6],[7,8,9])
+arr2 = arr * 2
 
-# arr2 = arr * 2
+df = pd.DataFrame({
+    'A':[1,2,3],
+    'B':[4,5,6],
+    'C':[7,8,9]
+})
 
-# import pandas as pandas
-
-# df = pd.DataFrame({
-#     'A':[1,2,3],
-#     'B':[4,5,6],
-#     'C':[7,8,9]
-# })
+print()
