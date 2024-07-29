@@ -34,7 +34,14 @@ def make_2d(rows, cols, value=None):
         list_2d.append(elems)
     return list_2d
 
+t2d_list = make_2d(3,3)
 
+print(t2d_list)
+
+for row in t2d_list:
+    for element in row:
+        print(element, end=' ')
+    print()
 
 # Exercise 3a:
 # Refactor to list comprehension
@@ -42,8 +49,8 @@ def make_2d_cool(rows, cols, value=None):
     '''Same function as above implemented as a list comprehension
     '''
     # Example 1
-    # return [[value for _ in range(cols)]
-    #             for _ in range(rows) ]
+    return [[value for _ in range(cols)]
+                for _ in range(rows) ]
 
     # two_dim_list = []
 
@@ -56,7 +63,7 @@ def make_2d_cool(rows, cols, value=None):
 
 
     # Example 3
-    two_dim_list =  [[(i+1)*(j+1) for j in range(cols)] for i in range(rows)]
+    # two_dim_list =  [[(i+1)*(j+1) for j in range(cols)] for i in range(rows)]
 
     # # Example 4
     # w, h = 3, 3
@@ -65,6 +72,15 @@ def make_2d_cool(rows, cols, value=None):
 
     # print(two_dim_list)
     return two_dim_list
+
+t2d_list = make_2d_cool(3,3)
+
+print(t2d_list)
+
+for row in t2d_list:
+    for element in row:
+        print(element, end=' ')
+    print()
 
 # Drive the code above...
 # print('#'*50)
