@@ -1,9 +1,5 @@
 # project.py
 
-class Project:
-    def __init__(self, name, organisation):
-        self.name = name
-        self.organisation = organisation
         # Challenge solution
 
 

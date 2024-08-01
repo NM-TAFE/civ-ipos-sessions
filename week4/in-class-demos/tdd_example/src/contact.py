@@ -1,8 +1,4 @@
-# contact.py
+# contact.py - what do we need here
 
-class Contact:
-    def __init__(self, name, email):
-        self.name = name
-        self.email = email
 
 
