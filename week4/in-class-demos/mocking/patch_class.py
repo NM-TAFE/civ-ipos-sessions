@@ -1,6 +1,6 @@
 from unittest import TestCase
 from unittest.mock import patch, Mock
-# from {organisation} import create_contact
+# from {contact_module} import create_contact
 
 class TestCreateContact(TestCase):
     @patch('contact_module.Contact')
