@@ -6,7 +6,7 @@ def greet_user():
     return f"Hello, {name}!"
 
 class TestGreetUser(TestCase):
-    @patch('builtins.input', return_value='Alice')
+    @patch('builtins.input', return_value='Alce')
     def test_greet_user(self, mock_input):
         # Call the function that requires user input
         result = greet_user()

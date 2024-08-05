@@ -3,8 +3,7 @@
 import unittest  # unit testing framework
 from math import pi
 
-from src.circle import \
-    circle_area  # importing the function we wrote in the other file
+from src.circle import circle_area  # importing the function we wrote in the other file
 
 
 class TestCircleArea(unittest.TestCase):
@@ -19,7 +18,7 @@ class TestCircleArea(unittest.TestCase):
         self.assertRaises(ValueError, circle_area, -2)
 
     # uncomment these at end of video and add the snippet in snippet.py to circle.py to pass these tests
-    # def test_types(self):
-    #     self.assertRaises(TypeError, circle_area, 3 + 5j)
-    #     self.assertRaises(TypeError, circle_area, True)
-    #     self.assertRaises(TypeError, circle_area, 'radius')
+    def test_types(self):
+        self.assertRaises(TypeError, circle_area, 3 + 5j)
+        self.assertRaises(TypeError, circle_area, True)
+        self.assertRaises(TypeError, circle_area, 'radius')
