@@ -2,6 +2,7 @@
 what happens when we update mutable and immutable objects
 Remember: the id is just the memory address
 Remember: the name is *not* the object
+Note: add id(a) to your watch list
 '''
 
 print('"Updating" a mutable variables')

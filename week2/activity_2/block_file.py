@@ -20,7 +20,7 @@ def add_project(org_index, project_index):
 organisations.append({"name": "XYs Corp", "contacts": [], "projects": []}) 
 
 # Initialise contacts 
-contacts.append({"name": "John Doe", "email": "john@example.com", "phone": "123-456-7890"}) 
+contacts.append({"name": "John Doe", "email": "john@example.com", "phone": "0888888888"})
 
 # Initialise projects 
 projects.append({"name": "Project X", "description": "Description of Project X"}) 
