@@ -3,7 +3,7 @@
     - Write a Python program to read the binary file named data.bin, 
     - convert its contents into text and bytes, and process each line accordingly. 
     - For lines that start with the prefix TEXT:
-    - convert the rest of the line to text (UTF-8 -encoding), and 
+    - convert the rest of the line to binary(UTF-8 -encoding), and 
     - for lines that start with the prefix BYTES:, convert the rest of the line to bytes.
 
 ### Analysis and Conversion: Based on the content of each line:
