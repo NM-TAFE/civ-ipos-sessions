@@ -14,9 +14,9 @@ class HashTable:
         if self.table[index] is None:
             self.table[index] = [(key, value)]
         else:
-            for i, (k, _) in enumerate(self.table[index]):
+            for item, (k, _) in enumerate(self.table[index]):
                 if k == key:
-                    self.table[index][i] = (key, value)
+                    self.table[index][item] = (key, value)
                     return
             self.table[index].append((key, value))
 
@@ -38,20 +38,20 @@ class HashTable:
         if self.table[index] is not None:
             # make sure to check for any multiple values thet might be stored 
             # in a 2D data strcuture here (list of tuples) - hashing may place mulitple items in a key
-            for i, (k, _) in enumerate(self.table[index]):
+            for item, (k, _) in enumerate(self.table[index]):
                 if k == key:
-                    del self.table[index][i]
+                    del self.table[index][item]
                     return
 
 # Example usage:
-ht = HashTable(10)
-ht.insert('a', 1)
-ht.insert('b', 2)
-ht.insert('c', 3)
+hash_table = HashTable(10)
+hash_table.insert('a', 1)
+hash_table.insert('b', 2)
+hash_table.insert('c', 3)
 
-print("Value for key 'a':", ht.get('a'))  # Output: Value for key 'a': 1
-print("Value for key 'd':", ht.get('d'))  # Output: Value for key 'd': None
+print("Value for key 'a':", hash_table.get('a'))  # Output: Value for key 'a': 1
+print("Value for key 'd':", hash_table.get('d'))  # Output: Value for key 'd': None
 
 # PLace breakpoint and rerun to see duplicated values
-ht.remove('b')
-print("Value for key 'b' after removal:", ht.get('b'))  # Output: Value for key 'b' after removal: None
+hash_table.remove('b')
+print("Value for key 'b' after removal:", hash_table.get('b'))  # Output: Value for key 'b' after removal: None

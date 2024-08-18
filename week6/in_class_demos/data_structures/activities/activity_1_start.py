@@ -4,9 +4,9 @@
 # Your task is to create a Python class named Stack with the following methods:
 
 # __init__: Initializes an empty stack.
+
 # push(item): Adds an item to the top of the stack.
 # pop(): Removes and returns the item at the top of the stack. 
+
 # If the stack is empty, it returns None.
 # is_empty(): Returns True if the stack is empty, False otherwise.
-
-

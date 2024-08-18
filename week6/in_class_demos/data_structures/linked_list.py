@@ -19,7 +19,7 @@ class LinkedList:
         # Loops through from the first node checking the node for a next (linked) value
         while last_node.next:
             last_node = last_node.next
-        # stos when no next(linked) value is found and sets the next(linked) value to the node just created
+        # stops when no next(linked) value is found and sets the next(linked) value to the node just created
         last_node.next = new_node
 
     def getItem(self, index):

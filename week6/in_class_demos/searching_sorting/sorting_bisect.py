@@ -11,6 +11,6 @@ bisect.insort(sorted_list, 6)
 print("Sorted list after insertion:", sorted_list) # Result: [1, 2, 3, 5, 6, 7, 9]
 
 # Performing binary search in a sorted list
-# Retrun the index of the item to be found(if found)
+# Return the index of the item to be found(if found)
 index = bisect.bisect_left(sorted_list, 5) # Result:  3
 print("Index of 5 in the sorted list:", index)
