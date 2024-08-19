@@ -4,7 +4,7 @@ class HashTable:
         self.table = [None] * size
 
     def hash(self, key):
-        # Get the remainde rof the hash table size and the hash of the key
+        # Get the remainder of the hash table size and the hash of the key
         return hash(key) % self.size
 
     def insert(self, key, value):
