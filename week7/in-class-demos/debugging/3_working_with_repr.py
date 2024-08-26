@@ -1,3 +1,5 @@
+import pprint
+
 class Book:
     def __init__(self, title, author, year):
         self.title = title
@@ -6,11 +8,11 @@ class Book:
     
     # Human-readable string
     def __str__(self):
-        return f"'{self.title}' by {self.author}"
+        return f"'STRING BOOK:{self.title}' by {self.author}"
     
     # Detailed string for debugging
     def __repr__(self):
-        return f"Book(title={self.title!r}, author={self.author!r}, year={self.year!r})" 
+        return f" REPR BOOK: Book(title={self.title!r}, author={self.author!r}, year={self.year!r})" 
 
 class Library:
     def __init__(self):
@@ -38,7 +40,8 @@ library.add_book(book2)
 library.add_book(book3)
 
 # Printing the library (calls __str__)
-print(library)
+# print(library)
 
-# Inspecting the library (calls __repr__)
-print(repr(library))
+# # Inspecting the library (calls __repr__)
+# print(repr(library))
+pprint.pprint(repr(library))
