@@ -36,18 +36,18 @@
 # ll: Long listing of the current function, displaying the entire source code for context.
 # q: Quit the debugger.
 
-# import os
+import os
 
-# def get_path(filename):
-#     """Return file's path or empty string if no path."""
-#     head, tail = os.path.split(filename)
-#     return head
+def get_path(filename):
+    """Return file's path or empty string if no path."""
+    head, tail = os.path.split(filename)
+    return head
 
 
-# import pdb; pdb.set_trace()
-# filename = __file__
-# filename_path = get_path(filename)
-# print(f'path = {filename_path}')
+import pdb; pdb.set_trace()
+filename = __file__
+filename_path = get_path(filename)
+print(f'path = {filename_path}')
 
 # # Use up & down
 # def function_a(first_number, second_number):

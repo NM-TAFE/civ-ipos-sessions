@@ -9,6 +9,7 @@ Ensure you step through this program in pdb only to understand how the program w
 # Once debugged add some documentation examples to help the next programmer!
 
 import sys
+# import os
 
 def add_task(task):
     task.append((task, False)) 
@@ -30,8 +31,8 @@ def list_tasks(tasks):
         print("No tasks available.")
         return
 
-    for i, task in enumerate(tasks):
-        print(f"{i}. {'[X]' if task else '[ ]'} {task[0]}") 
+    for index, task in enumerate(tasks):
+        print(f"{index}. {'[X]' if task else '[ ]'} {task[0]}") 
 
 def sort_tasks(tasks):
     tasks.sort(key=lambda x: x[0])
@@ -49,6 +50,7 @@ def binary_search(tasks, target):
     return -1
 
 def main():
+    # import pdb; pdb.set_trace()
     tasks = []
 
     while True:
