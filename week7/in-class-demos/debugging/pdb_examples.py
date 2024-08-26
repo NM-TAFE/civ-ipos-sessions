@@ -48,3 +48,31 @@
 # filename = __file__
 # filename_path = get_path(filename)
 # print(f'path = {filename_path}')
+
+# # Use up & down
+# def function_a(first_number, second_number):
+#     result_of_addition = first_number + second_number
+#     print(f"In function_a: first_number = {first_number}, second_number = {second_number}, result_of_addition = {result_of_addition}")
+#     function_b(result_of_addition)
+
+# def function_b(sum_result):
+#     result_of_multiplication = sum_result * 2
+#     print(f"In function_b: sum_result = {sum_result}, result_of_multiplication = {result_of_multiplication}")
+#     function_c(result_of_multiplication)
+
+# def function_c(multiplied_result):
+#     result_of_subtraction = multiplied_result - 3
+#     print(f"In function_c: multiplied_result = {multiplied_result}, result_of_subtraction = {result_of_subtraction}")
+#     function_d(result_of_subtraction)
+
+# def function_d(subtracted_result):
+#     result_of_division = subtracted_result / 2
+#     print(f"In function_d: subtracted_result = {subtracted_result}, result_of_division = {result_of_division}")
+#     # Start debugger here
+#     import pdb; pdb.set_trace()  # Start debugger here
+#     print("Inside function_d")
+
+# if __name__ == "__main__":
+#     number_one = 5
+#     number_two = 10
+#     function_a(number_one, number_two)

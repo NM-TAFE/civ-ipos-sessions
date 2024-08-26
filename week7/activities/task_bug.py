@@ -1,6 +1,12 @@
 '''A buggy Task Manager that provides an opportunity to debug code by both reasoning about it and stepping through using pdb.
-The program has a number of bugs that are introduced one at a time. The goal is to find and fix the bugs.
+
+The program has a number of bugs that are introduced one at a time. 
+
+The goal is to find and fix the bugs.
+
 Ensure you step through this program in pdb only to understand how the program works and to find the bugs.'''
+
+# Once debugged add some documentation examples to help the next programmer!
 
 import sys
 
