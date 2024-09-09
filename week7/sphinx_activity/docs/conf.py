@@ -13,8 +13,8 @@ current_dir = Path(__file__).parent
 sys.path.insert(0, str(current_dir.parent))
 
 project = 'Demo Doc'
-copyright = '2023, Raf'
-author = 'Raf'
+copyright = '2024, NM Tafe'
+author = 'Raf @ NM Tafe'
 release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------

@@ -1,15 +1,24 @@
 '''A buggy Task Manager that provides an opportunity to debug code by both reasoning about it and stepping through using pdb.
-The program has a number of bugs that are introduced one at a time. The goal is to find and fix the bugs.
+
+The program has a number of bugs that are introduced one at a time. 
+
+The goal is to find and fix the bugs.
+
 Ensure you step through this program in pdb only to understand how the program works and to find the bugs.'''
 
-import sys
+# Once debugged add some documentation examples to help the next programmer!
 
-def add_task(task):
-    task.append((task, False)) 
+import sys
+# import os
+
+def add_task(tasks, task):
+    # task.append((task, False))
+    tasks.append((task, False)) 
 
 def mark_task_completed(tasks, index):
     if 0 <= index < len(tasks):
-        tasks[index] = True 
+        # tasks[index] = True 
+        tasks[index] = (tasks[index][0], True)
     else:
         print("Invalid task index.")
 
@@ -24,13 +33,15 @@ def list_tasks(tasks):
         print("No tasks available.")
         return
 
-    for i, task in enumerate(tasks):
-        print(f"{i}. {'[X]' if task else '[ ]'} {task[0]}") 
+    for index, task in enumerate(tasks):
+        # print(f"{index}. {'[X]' if task else '[ ]'} {task[0]}") 
+        print(f"{index}. {'[X]' if task[1] else '[ ]'} {task[0]}")
 
 def sort_tasks(tasks):
     tasks.sort(key=lambda x: x[0])
 
 def binary_search(tasks, target):
+    sort_tasks(tasks)
     low, high = 0, len(tasks) - 1
     while low <= high:
         mid = (low + high) // 2
@@ -43,6 +54,7 @@ def binary_search(tasks, target):
     return -1
 
 def main():
+    # import pdb; pdb.set_trace()
     tasks = []
 
     while True:
@@ -58,6 +70,7 @@ def main():
 
         if choice == "1":
             task = input("Enter task description: ")
+            # add_task(tasks, task)
             add_task(tasks, task)
         elif choice == "2":
             index = int(input("Enter task index to mark as completed: ")) - 1
@@ -74,7 +87,7 @@ def main():
             target = input("Enter task description to search: ")
             index = binary_search(tasks, target)
             if index != -1:
-                print(f"Task '{target}' found at index {index + 1}.")
+                print(f"Task '{target}' found at index {index}.")
             else:
                 print(f"Task '{target}' not found.")
         elif choice == "7":

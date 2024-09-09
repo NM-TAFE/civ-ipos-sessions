@@ -1,12 +1,45 @@
-# # Challenge 1 - Instructions
-# A stack is a last-in, first-out (LIFO) data structure that allows elements to be 
-# inserted and removed from the same end, called the top of the stack. 
-# Your task is to create a Python class named Stack with the following methods:
+# class Stack:
+#     def __init__(self):
+#         self.stack = []
 
-# __init__: Initializes an empty stack.
+#     def push(self, item):
+#         self.stack.append(item)
 
-# push(item): Adds an item to the top of the stack.
-# pop(): Removes and returns the item at the top of the stack. 
+#     def pop(self):
+#         if not self.is_empty():
+#             return self.stack.pop()
+#         else:
+#             return None
 
-# If the stack is empty, it returns None.
-# is_empty(): Returns True if the stack is empty, False otherwise.
+#     def is_empty(self):
+#         return len(self.stack) == 0
+
+# # Example usage:
+# my_stack = Stack()
+# my_stack.push(1)
+# my_stack.push(2)
+# my_stack.push(3)
+
+# print("Popped item:", my_stack.pop())  # Output: Popped item: 3
+# print("Popped item:", my_stack.pop())  # Output: Popped item: 2
+
+# using deque class
+from collections import deque
+
+class Stack:
+    def __init__(self):
+        # Initialise an empty deque
+        self.stack = deque() 
+
+    def is_empty(self):
+        # Return True if the stack is empty, otherwise False
+        return len(self.stack) == 0  
+    
+# Example usage:
+my_stack = Stack()
+my_stack.stack.append(1)
+my_stack.stack.append(2)
+my_stack.stack.append(3)
+
+print("Popped item:", my_stack.stack.pop())  # Output: Popped item: 3
+print("Popped item:", my_stack.stack.pop())  # Output: Popped item: 2

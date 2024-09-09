@@ -28,3 +28,11 @@ def pearson_hash(input_string):
 # Example usage
 print(pearson_hash("hello"))  # Example output: 116
 print(pearson_hash("world"))  # Example output: 213
+
+
+# XOR - output (line 25)
+# A (Input 1)	B (Input 2)	A XOR B (Output)
+# 0	            0	        0
+# 0	            1	        1
+# 1	            0	        1
+# 1	            1	        0
