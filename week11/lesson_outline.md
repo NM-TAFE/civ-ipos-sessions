@@ -7,7 +7,7 @@ By the end of this lesson, students should be able to:
 - Define open source software (OSS) and its principles.
 - Explain the reasons individuals and organisations contribute to or use open source.
 - Understand different open source licensing models.
-- Describe the monetization models in the open source ecosystem.
+- Describe the monetisation models in the open source ecosystem.
 - Identify methods to find open source projects and assess their popularity.
 
 ---
@@ -60,7 +60,7 @@ Name at least three projects that you use regularly that are open source.
 
 ---
 
-## Monetization Models
+## Monetisation Models
 
 - Donations
 - Consulting and Services
@@ -69,7 +69,7 @@ Name at least three projects that you use regularly that are open source.
 
 **Discuss**:
 
-- Real-world examples of companies successfully monetizing open source.
+- Real-world examples of companies successfully monetising open source.
 
 ---
 
