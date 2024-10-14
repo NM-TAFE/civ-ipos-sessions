@@ -2,6 +2,10 @@
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
+# Wheels are binary archives containing metadata, records & py files
+# unzip numpy-1.21.2-cp38-cp38-win_amd64.whl
+
+
 [tool.poetry]
 name = "my_package"
 version = "0.1"

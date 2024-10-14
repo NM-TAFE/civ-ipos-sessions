@@ -1,3 +1,5 @@
+# RECORDS hold the paths and hashes of the installed files.
+
 numpy/LICENSE.txt,sha256:c7dc9e317e1d34fd4cc208367c8f84c2876f5f271d748e1f0072a5187d325915,29248
 numpy/METADATA,sha256:5bead573ce14bfb65aa73902412218a1c334849464376ce17e1ac82ec8a25dbb,6402
 numpy/__init__.py,sha256:fd74d58a2c9d225067229cb58a65084c90314e6a9a857ccbb75f28f09decd204,358
