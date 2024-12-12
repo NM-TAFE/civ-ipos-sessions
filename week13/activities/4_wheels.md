@@ -106,6 +106,10 @@ Once you've set up either `setup.py` or `pyproject.toml` correctly, you can buil
   ```bash
   poetry build
   ```
+- **For PDM:**
+  ```bash
+  pdm build
+  ```
 
 ### **5. Verify the Wheel Contents**
 
