@@ -1,4 +1,4 @@
-# creates a lookup table where each product code is associated with a tuple containing the product name and its price.
+# create a lookup table where each product code is associated with a tuple containing the product name and its price.
 
 # Define the function that creates the product lookup table
 def create_product_lookup_table(product_codes, product_info):

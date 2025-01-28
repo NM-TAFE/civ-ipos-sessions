@@ -1,15 +1,16 @@
 # Lesson Overview
+
 Introduction to intermediate concepts:
+
 - Modular programming
 - Pass-by-reference
-- (optional) Intro to 2D data structures
 
 ## Objectives
-1. Understand the mechanics and reasoning for 
-modular programming in Python
+
+1. Understand the mechanics and reasoning for
+   modular programming in Python
 2. Understand pass-by-reference and its application in Python
 3. Apply your knowledge to practical and synthetic problems
-
 
 # Outcome
 
@@ -20,6 +21,7 @@ modular programming in Python
 3. How can you import only a specific function or class from a module in Python? What is the syntax for this?
 4. How would you explain Python's parameter-passing mechanism? Is it more similar to pass-by-value or pass-by-reference?
 5. Given the following Python code, what will be the output and why?
+
 ```python
 def modify_list(lst):
     lst.append("new")

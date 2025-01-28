@@ -1,9 +1,8 @@
 # test_project.py
 
-        # Create an organization
+        # Create an organisation
 
         # Create a project associated with the organisation
-
 
         # # Check if project is associated with the correct organisation
 

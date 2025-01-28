@@ -28,6 +28,6 @@
 ## Workshop Part 2 (45 minutes):
 
 - Review and recap
-- Refactoring for OOP
+- Refactoring for OOP & Modular Development
 - Questions and concerns
 - Understanding Checkpoints & use of AI in this cluster
