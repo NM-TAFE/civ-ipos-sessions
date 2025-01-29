@@ -1,8 +1,8 @@
 # IPOS: Weekly sessions
 
-Provides a complement to Blackboard sessions and in-class demonstrations, and practical activities. Sessions are updated weekly (sometimes multiple times per session).
+Provides a compliment to Blackboard sessions and in-class demonstrations, and practical activities. Sessions are updated weekly (sometimes multiple times per session).
 
-Please note your class's sessions may be in a branch!
+Please note your class's sessions will be in a branch!
 
 ## Recommended workflow
 
@@ -30,14 +30,14 @@ git fetch origin
 4. Merge the changes from the upstream's main branch into your local branch:
 
 ```bash
-git checkout local_experiments
+git switch local_experiments
 git merge origin/main
 ```
 
 5. If you want to keep your local branch's history clean, you can rebase instead of merge:
 
 ```bash
-git checkout local_experiments
+git switch local_experiments
 git rebase origin/main
 ```
 
