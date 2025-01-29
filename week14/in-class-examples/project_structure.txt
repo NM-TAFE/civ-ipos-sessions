@@ -1,0 +1,74 @@
+my_project/
+├── .git/
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── setup.py
+├── my_package/
+│   ├── __init__.py
+│   ├── module1.py
+│   ├── module2.py
+│   └── tests/
+│       ├── __init__.py
+│       ├── test_module1.py
+│       └── test_module2.py
+├── my_script.py
+├── venv/  (or any virtual environment directory)
+├── build/
+├── dist/
+├── my_package.egg-info/
+│   ├── PKG-INFO
+│   ├── SOURCES.txt
+│   ├── dependency_links.txt
+│   ├── requires.txt
+│   └── top_level.txt
+├── my_package.dist-info/
+│   ├── METADATA
+│   ├── RECORD
+│   ├── direct_url.json
+│   ├── metadata.json
+│   ├── pyproject.toml
+│   ├── top_level.txt
+│   └── version.txt
+├── __pycache__/
+│   ├── __init__.cpython-39.pyc
+│   ├── module1.cpython-39.pyc
+│   └── module2.cpython-39.pyc
+└── site-packages/  (contains installed packages and their dependencies)
+
+
+numpy==1.21.0
+  - six [required: >=1.9.0, installed: 1.16.0]
+  - pyyaml [required: Any, installed: 5.4.1]
+  - packaging [required: Any, installed: 21.0]
+  - setuptools [required: >=40.4, installed: 58.2.0]
+  - six [required: >=1.9.0, installed: 1.16.0]
+
+# Produce the list
+pip freeze
+# Save directly to the requirements
+pip freeze > requirements.txt
+# Install from requirements
+pip install -r requirements.txt
+
+# Output example
+package1==1.0.0
+package2==2.3.1
+package3==0.5.2
+
+# Major Version:
+- 1.0.0: Initial release.
+- 2.0.0: Major overhaul, possibly breaking changes.
+
+# Minor Version:
+- 1.1.0: Added a new feature.
+- 1.2.0: Added another new feature, no breaking changes.
+
+# Alpha Version:
+- 1.2.0a1: Alpha version 1 of the upcoming 1.2.0 release.
+
+# Beta Version:
+- 1.2.0b1: Beta version 1 of the upcoming 1.2.0 release.
+
+# Final (Stable) Version:
+- 1.2.0: Stable release of version 1.2.0.

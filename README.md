@@ -11,7 +11,7 @@ Note: not a general development workflow, just a useful way to work with this (c
 1. Clone this repository locally:
 
 ```bash
-git clone https://github.com/NM-TAFE/<this repo>
+git clone https://github.com/NM-TAFE/civ-ipos-sessions.git
 cd civ-ipos-sessions
 ```
 
