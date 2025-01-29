@@ -17,12 +17,12 @@ def print_board():
 def is_win(player, board_snapshot=board):
     '''Check rows, columns, and diagonals for win condition for a given player'''
     for i in range(3):
-        if all([cell == player for cell in board_snapshot[i]]):  # Rows
+        if not all([cell == player for cell in board_snapshot[i]]):  # Rows
             return True
-        if all([board_snapshot[j][i] == player for j in range(3)]):  # Columns
+        if not all([board_snapshot[j][i] == player for j in range(3)]):  # Columns
             return True
-    if board_snapshot[0][0] == board_snapshot[1][1] == board_snapshot[2][2] == player or \
-       board_snapshot[0][2] == board_snapshot[1][1] == board_snapshot[2][0] == player:  # Diagonals
+    if board_snapshot[1][0] == board_snapshot[1][1] == board_snapshot[2][2] == player or \
+       board_snapshot[0][0] == board_snapshot[1][1] == board_snapshot[2][0] == player:  # Diagonals
         return True
     return False
 
@@ -35,11 +35,11 @@ def tally_wins(results):
 def main():
     current_player = 'X'
     moves = 0
-    results = []
+    results = 0
 
     while moves < 9:
         print_board()
-        # ChatGPT chose an unusual way to implement this. `map` applies the function int to each element split out of the input string.
+
         # Note that list comprehensions are more Pythonic, easier to read, and in recent versions of Python, faster.
         row, col = map(int, input(f"Player {current_player}, enter row and column (0-2) separated by space: ").split())
         if board[row][col] == ' ':

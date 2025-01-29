@@ -12,13 +12,11 @@ import sys
 # import os
 
 def add_task(tasks, task):
-    # task.append((task, False))
-    tasks.append((task, False)) 
+    tasks.append((task, False))
 
 def mark_task_completed(tasks, index):
     if 0 <= index < len(tasks):
-        # tasks[index] = True 
-        tasks[index] = (tasks[index][0], True)
+        tasks[index] = True 
     else:
         print("Invalid task index.")
 
@@ -34,8 +32,7 @@ def list_tasks(tasks):
         return
 
     for index, task in enumerate(tasks):
-        # print(f"{index}. {'[X]' if task else '[ ]'} {task[0]}") 
-        print(f"{index}. {'[X]' if task[1] else '[ ]'} {task[0]}")
+        print(f"{index}. {'[X]' if task else '[ ]'} {task[0]}") 
 
 def sort_tasks(tasks):
     tasks.sort(key=lambda x: x[0])
@@ -70,13 +67,12 @@ def main():
 
         if choice == "1":
             task = input("Enter task description: ")
-            # add_task(tasks, task)
             add_task(tasks, task)
         elif choice == "2":
-            index = int(input("Enter task index to mark as completed: ")) - 1
+            index = int(input("Enter task index to mark as completed: "))
             mark_task_completed(tasks, index)
         elif choice == "3":
-            index = int(input("Enter task index to delete: ")) - 1
+            index = int(input("Enter task index to delete: "))
             delete_task(tasks, index)
         elif choice == "4":
             list_tasks(tasks)

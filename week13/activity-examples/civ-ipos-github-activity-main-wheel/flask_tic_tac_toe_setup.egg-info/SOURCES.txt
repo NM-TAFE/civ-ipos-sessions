@@ -1,9 +1,0 @@
-MANIFEST.in
-setup.py
-flask_tic_tac_toe_setup.egg-info/PKG-INFO
-flask_tic_tac_toe_setup.egg-info/SOURCES.txt
-flask_tic_tac_toe_setup.egg-info/dependency_links.txt
-flask_tic_tac_toe_setup.egg-info/requires.txt
-flask_tic_tac_toe_setup.egg-info/top_level.txt
-static/style.css
-templates/index.html

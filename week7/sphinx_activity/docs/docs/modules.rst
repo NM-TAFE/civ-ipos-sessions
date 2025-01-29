@@ -1,4 +1,4 @@
-docs
+cddocs
 ====
 
 .. toctree::

@@ -1,9 +1,3 @@
-# Goal: Down the rabbit hole we go. By the end of the lesson, students should understand various data structures, their Python equivalents, and their relevance in modern software development.
-
-## Key terms: Lists, Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Sets, Hash Tables, User-defined data structures, Binary Search.
-
-## Performance criteria: ICTPRG443, 2.3, 2.4
-
 1. Introduction to Data Structures
 
 - Define what a data structure is.
@@ -21,7 +15,6 @@
 3. Introduction to Binary Search
 
 - Explain the idea behind binary search and its efficiency.
-- Code our favourite guessing game!
 
 4. Python's Language-provided Facilities for Sorted Data Structures
 
@@ -31,6 +24,7 @@
 5. Short Activities
 
 - Activity 1: Implement a basic stack using lists.
-- Activity 2: Create a number guessing game and a super powerful AI that optimally solves them.
+- Activity 2: Implement a basic queue using lists.
+- Activity 3: Implement a basic graph using dataclasses
 
 6. Work on KBA part 1 (90 min alloc)

@@ -33,7 +33,7 @@ def index():
 
 @app.route('/play/<int:cell>')
 def play(cell):
-    # breakpoint()
+    # breakpoint()  PDB
     global current_player
     if board[cell] == ' ':
         board[cell] = current_player

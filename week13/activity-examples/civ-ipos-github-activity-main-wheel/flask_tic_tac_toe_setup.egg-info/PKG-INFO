@@ -1,4 +1,0 @@
-Metadata-Version: 2.1
-Name: flask-tic-tac-toe-setup
-Version: 0.1.0
-Requires-Dist: flask
