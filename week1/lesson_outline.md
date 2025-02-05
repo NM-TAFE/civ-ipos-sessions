@@ -29,5 +29,6 @@
 
 - Review and recap
 - Refactoring for OOP & Modular Development
+- Describing your classes using UML
 - Questions and concerns
 - Understanding Checkpoints & use of AI in this cluster
