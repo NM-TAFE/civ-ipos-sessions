@@ -1,0 +1,16 @@
+2025-02-04 11:04:18,209 - DEBUG - Requesting weather data for coordinates: lat=-31.9505, lon=115.8605
+2025-02-04 11:04:18,234 - DEBUG - Starting new HTTPS connection (1): api.openweathermap.org:443
+2025-02-04 11:04:19,094 - DEBUG - https://api.openweathermap.org:443 "GET /data/2.5/weather?lat=-31.9505&lon=115.8605&appid=1240af3475fd35aedc776b5366536ee4&units=metric HTTP/1.1" 200 499
+2025-02-04 11:04:19,094 - INFO - Weather data received: {'coord': {'lon': 115.8605, 'lat': -31.9527}, 'weather': [{'id': 800, 'main': 'Clear', 'description': 'clear sky', 'icon': '01d'}], 'base': 'stations', 'main': {'temp': 27.82, 'feels_like': 27.33, 'temp_min': 26.62, 'temp_max': 28.84, 'pressure': 1013, 'humidity': 37, 'sea_level': 1013, 'grnd_level': 1009}, 'visibility': 10000, 'wind': {'speed': 7.2, 'deg': 90}, 'clouds': {'all': 0}, 'dt': 1738637831, 'sys': {'type': 2, 'id': 63154, 'country': 'AU', 'sunrise': 1738619061, 'sunset': 1738667792}, 'timezone': 28800, 'id': 2063523, 'name': 'Perth', 'cod': 200}
+2025-02-04 11:04:55,116 - DEBUG - Requesting weather data for coordinates: lat=-31.9505, lon=115.8605
+2025-02-04 11:04:55,148 - DEBUG - Starting new HTTPS connection (1): api.openweathermap.org:443
+2025-02-04 11:04:55,987 - DEBUG - https://api.openweathermap.org:443 "GET /data/2.5/weather?lat=-31.9505&lon=115.8605&appid=1240af3475fd35aedc776b5366536ee&units=metric HTTP/1.1" 401 108
+2025-02-04 11:04:55,988 - ERROR - HTTP error occurred: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?lat=-31.9505&lon=115.8605&appid=1240af3475fd35aedc776b5366536ee&units=metric
+2025-02-04 11:04:55,990 - ERROR - Traceback (most recent call last):
+  File "/Users/robbozinoz/Documents/nmtafe/ipos/civ-ipos-sessions/week7/in-class-demos/debugging/4_api_logging.py", line 16, in get_weather
+    response.raise_for_status()  # Raises an HTTPError for bad responses
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?lat=-31.9505&lon=115.8605&appid=1240af3475fd35aedc776b5366536ee&units=metric
+
