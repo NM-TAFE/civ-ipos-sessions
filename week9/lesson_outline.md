@@ -3,4 +3,5 @@
 - implementing algorithms
 - advanced libraries
 - decorator
+- modifiers
 - generators(mocking)
