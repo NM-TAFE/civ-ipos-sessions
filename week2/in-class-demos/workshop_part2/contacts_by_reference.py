@@ -1,4 +1,4 @@
-# Step debug through the code, each function and the first line of the if statement 
+# Step debug through the code, each function and the first line of the if statement
 # Run the code - note the in built id method uses memory addresses to create a unique id for objects in memory
 # Compare the contact list id and the organisation contacts list id
 # at the end to further explain pass by object reference
@@ -43,4 +43,3 @@ if __name__ == "__main__":
 
     print("\nContacts after modification:")
     display_contacts(organisation_contacts)
-
