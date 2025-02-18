@@ -1,20 +1,22 @@
-# create a lookup table where each product code is associated with a tuple containing the product name and its price.
+# We sometimes want to use the nested loops to created multidimensional structure
+# create a lookup table where each product code is associated
+# with a tuple containing the product name and its price.
 
 # Define the function that creates the product lookup table
 def create_product_lookup_table(product_codes, product_info):
-    # Initialise an empty dictionary to store the lookup table
-    look_up_table = {}
+    # TODO Initialise an empty dictionary to store the lookup table
 
-    # Iterate over the rows of the product codes list
-    for i in range(len(product_codes)):
-        # Iterate over the elements in each row
-        for j in range(len(product_codes[i])):
-            # Use the product code as the key for the dictionary
-            key = (product_codes[i][j])
-            # Use the corresponding product info as the value for the dictionary
-            value = product_info[i][j]
-            # Add the key-value pair to the lookup table
-            look_up_table[key] = value
+
+    # TODO Iterate over the rows of the product codes list
+
+        # TODO Iterate over the elements in each row
+
+            # TODO Use the product code as the key for the dictionary
+
+            # TODO Use the corresponding product info as the value for the dictionary
+
+            # TODO Add the key-value pair to the lookup table
+
 
 
     # Return the completed lookup table
