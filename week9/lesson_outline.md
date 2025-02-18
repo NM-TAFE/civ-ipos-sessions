@@ -1,6 +1,7 @@
 ## TODO Advanced Python Topics
 
-- implimenting algorithms
+- implementing algorithms
 - advanced libraries
 - decorator
+- modifiers
 - generators(mocking)

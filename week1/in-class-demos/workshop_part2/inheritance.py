@@ -28,8 +28,8 @@ class ScientificCalculator(Calculator):
 
 
 class ProgrammerCalculator(Calculator):
-    def __init__(self, a, b):
-        super().__init__(a, b)
+    def __init__(self, __a, __b):
+        super().__init__(__a, __b)
 
     def bitwise_and(self):
-        return self.a & self.b
+        return self.__a & self.__b

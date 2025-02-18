@@ -34,7 +34,7 @@ Here is an example of **random access** (let's get the third animal in the pack)
 print(animals[2])  # Remember Python uses zero-based indexing!
 ```
 
-### Challenges
+### Challenge 1
 
 1. Use sequential access to check if the list contains a Zebra
 2. What is the correct way to check if a list contains a Zebra? How do you stop it from raising an exception (two correct answers)
@@ -53,7 +53,7 @@ Finally, let's convert this list to a tuple and try to add 'Bear' to the pack:
 
 ```python
 animals = tuple(animals)
-# animals.append('Bear')  # Uncommenting this will throw an error because tuples are immutable!
+# animals.append('Bear')
 ```
 
 ## Dictionaries and Sets

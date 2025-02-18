@@ -5,7 +5,7 @@ import traceback
 # Configure logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='api_app.log')
 
-API_KEY = 'sdekjfbxwv;askdbn'  # Replace with your actual API key
+API_KEY = '1240af34'  # Replace with your actual API key
 
 def get_weather(lat, lon):
     """Fetches weather data for the specified latitude and longitude."""
