@@ -17,8 +17,8 @@ class TestCircleArea(unittest.TestCase):
     def test_values(self):
         self.assertRaises(ValueError, circle_area, -2)
 
-    # uncomment these at end of video and add the snippet in snippet.py to circle.py to pass these tests
-    def test_types(self):
-        self.assertRaises(TypeError, circle_area, 3 + 5j)
-        self.assertRaises(TypeError, circle_area, True)
-        self.assertRaises(TypeError, circle_area, 'radius')
+    # # uncomment these at end of video and add the snippet in snippet.py to circle.py to pass these tests
+    # def test_types(self):
+    #     self.assertRaises(TypeError, circle_area, 3 + 5j)
+    #     self.assertRaises(TypeError, circle_area, True)
+    #     self.assertRaises(TypeError, circle_area, 'radius')
