@@ -1,32 +1,32 @@
 # # Slide 8
 # # Open the file in binary mode to read bytes
-# with open("example.txt", "rb") as file:
-#     # Read the contents of the file as bytes
-#     bytes_data = file.read()
+# # with open("example.txt", "rb") as file:
+# #     # Read the contents of the file as bytes
+# #     bytes_data = file.read()
 
-#     # Print the bytes object
-#     print("Bytes object:", bytes_data)
+# #     # Print the bytes object
+# #     print("Bytes object:", bytes_data)
 
-#     # Iterate over each byte and print its integer value
-#     print("Byte integers:")
-#     for byte in bytes_data:
-#         print(byte)
+# #     # Iterate over each byte and print its integer value
+# #     print("Byte integers:")
+# #     for byte in bytes_data:
+# #         print(byte)
 
-#     # Iterate over each byte and print its hexadecimal representation
-#     print("Byte hexadecimal representations:")
-#     for byte in bytes_data:
-#         print(hex(byte))
+# #     # Iterate over each byte and print its hexadecimal representation
+# #     print("Byte hexadecimal representations:")
+# #     for byte in bytes_data:
+# #         print(hex(byte))
 
-# # Slide 14
-# binary_representation = ' '.join([bin(ord(c))[2:].zfill(8) for c in "Everything is Binary"])
+# # # Slide 14
+# binary_representation = ' '.join([bin(ord(character))[2:].zfill(8) for character in "Hello: Everything is Binary"])
 # print(binary_representation)
 
 # # Simpler explanation of bytes
 # binary_representations = []
 
-# for c in "Everything is Binary":
+# for character in "Everything is Binary":
 #     # Step 1: Get the Unicode code point of the character
-#     unicode_code_point = ord(c)
+#     unicode_code_point = ord(character)
 #     print(f"Unicode point: {unicode_code_point}")
 
 #     # Step 2: Convert the Unicode code point to binary and remove the prefix '0b'
@@ -58,11 +58,11 @@
 # print()
 
 # # Convert integer 42 to a bytes object
-# bytes_42 = (42).to_bytes(1, byteorder='big') # b'*'
+# bytes_array = ([52, 79, 123]).to_bytes(1, byteorder='big') # b'*'
 
 # # Convert the bytes object back to an integer
-# integer_from_bytes = int.from_bytes(bytes_42, byteorder='big') # 42
+# integer_from_bytes = int.from_bytes(bytes_array, byteorder='little') # 42
 
-# print("Bytes representation of 42:", bytes_42)
+# print("Bytes representation of 42:", bytes_array)
 # print("Integer from bytes:", integer_from_bytes)
 
