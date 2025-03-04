@@ -1,5 +1,4 @@
 import random
-import operator
 
 #Create random bytes
 def randomBytes(size):

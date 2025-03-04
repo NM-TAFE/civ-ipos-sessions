@@ -1,3 +1,5 @@
+def main():
+    pass
 # Define 3 helper functions for text-to-bytes conversion, bytes-to-text conversion, and byte reversal
 
 # Main program logic
@@ -32,3 +34,5 @@
 
 # Handle other exceptions using the exception class
 
+if __name__ == "__main__":
+    main()

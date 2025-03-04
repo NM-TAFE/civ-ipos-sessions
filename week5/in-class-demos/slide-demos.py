@@ -1,6 +1,6 @@
 # # Slide 8
 # # Open the file in binary mode to read bytes
-# with open("./week5/in-class-demos/example.txt", "rb") as file:
+# with open("example.txt", "rb") as file:
 #     # Read the contents of the file as bytes
 #     bytes_data = file.read()
 
@@ -55,7 +55,7 @@
 # # Decode the bytes object back to a Unicode string
 # decoded_str = bytes_obj_utf8.decode('utf-8')
 
-print()
+# print()
 
 # # Convert integer 42 to a bytes object
 # bytes_42 = (42).to_bytes(1, byteorder='big') # b'*'
