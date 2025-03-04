@@ -45,5 +45,5 @@ Generate a binary using `PyInstaller`:
      ```
    - On **Linux/macOS**:
      ```bash
-     ./app
+     ./_chatgpt
      ```
