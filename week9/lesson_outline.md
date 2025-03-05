@@ -4,4 +4,5 @@
 - advanced libraries
 - decorator
 - modifiers
-- generators(mocking)
+- generators(mocking & patching)
+- other
