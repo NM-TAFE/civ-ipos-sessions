@@ -72,8 +72,29 @@ print("Bytearray object of RGB (160, 32, 240):", purple_bytearray)
 # | 32 (G)      | 00100000              | 0x20                      | \x20       |
 # | 240 (B)     | 11110000              | 0xf0                      | \xf0       |
 
-# - **Binary**: Represents each value as an 8-bit binary number.
-# - **Hexadecimal (0x)**: Base-16 representation, commonly used in computing.
-# - **Escape Hex (\x)**: Used for encoding characters in strings and byte sequences.
+with open("rgb_grid.bin", "r+b") as file:
+    file.truncate(5)  # Truncate file to 5 bytes
 
+# 6. Efficiently Reading Large Binary Files in Chunks
+with open("rgb_grid.bin", "rb") as file:
+    while chunk := file.read(1024):  # Read 1KB at a time
+        # Do something process(chunk)
+        pass
 
+# 7. File Pointer Operations (seek and tell)
+with open("rgb_grid.bin", "rb") as file:
+    print(file.tell())  # Outputs: 0 (start)
+    file.seek(5)
+    print(file.tell())  # Outputs: 5
+    data = file.read(3)
+    print(data)  # Outputs: b'Wor'
+
+import struct
+
+# Packing an integer into binary format
+binary_data = struct.pack("I", 12345)  # 'I' = unsigned int (4 bytes)
+print(binary_data.hex())  # Outputs: '39300000' (Little-endian representation)
+
+# Unpacking binary data
+unpacked_value = struct.unpack("I", binary_data)[0]
+print(unpacked_value)  # Outputs: 12345

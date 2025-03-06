@@ -1,21 +1,21 @@
-# # Slide 8
-# # Open the file in binary mode to read bytes
-# # with open("example.txt", "rb") as file:
-# #     # Read the contents of the file as bytes
-# #     bytes_data = file.read()
+# Slide 8
+# Open the file in binary mode to read bytes
+with open("example.txt", "rb") as file:
+    # Read the contents of the file as bytes
+    bytes_data = file.read()
 
-# #     # Print the bytes object
-# #     print("Bytes object:", bytes_data)
+    # Print the bytes object
+    print("Bytes object:", bytes_data)
 
-# #     # Iterate over each byte and print its integer value
-# #     print("Byte integers:")
-# #     for byte in bytes_data:
-# #         print(byte)
+    # Iterate over each byte and print its integer value
+    print("Byte integers:")
+    for byte in bytes_data:
+        print(byte)
 
-# #     # Iterate over each byte and print its hexadecimal representation
-# #     print("Byte hexadecimal representations:")
-# #     for byte in bytes_data:
-# #         print(hex(byte))
+    # Iterate over each byte and print its hexadecimal representation
+    print("Byte hexadecimal representations:")
+    for byte in bytes_data:
+        print(hex(byte))
 
 # # # Slide 14
 # binary_representation = ' '.join([bin(ord(character))[2:].zfill(8) for character in "Hello: Everything is Binary"])
