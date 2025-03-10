@@ -54,22 +54,20 @@ class Graph:
 def main():
     # Step 1: Create Locations
     location1 = Location(name="LocationA", latitude=40.7128, longitude=30.7008)
-    location2 = Location(name="LocationB", latitude=34.0522, longitude=31.7128)
-    location3 = Location(name="LocationC", latitude=51.5074, longitude=34.5728)
-    location4 = Location(name="LocationD", latitude=48.8566, longitude=38.7333)
+    # location2 = Location(name="LocationB", latitude=34.0522, longitude=31.7128)
+    # location3 = Location(name="LocationC", latitude=51.5074, longitude=34.5728)
 
     # Step 2: Create a Graph and Add Locations
     graph = Graph()
     graph.add_location(location1)
-    graph.add_location(location2)
-    graph.add_location(location3)
-    graph.add_location(location4)
+    # graph.add_location(location2)
+    # graph.add_location(location3)
+
 
     # Step 3: Add Connections
     graph.add_connection("LocationA", "LocationB")
-    graph.add_connection("LocationA", "LocationC")
-    graph.add_connection("LocationB", "LocationD")
-    graph.add_connection("LocationC", "LocationD")
+    # graph.add_connection("LocationA", "LocationC")
+    # graph.add_connection("LocationB", "LocationD")
 
     # Step 4: Display the Graph (Map)
     print("Map representation:")
