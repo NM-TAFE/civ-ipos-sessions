@@ -3,13 +3,13 @@ class HashTable:
         self.size = size
         self.table = [None] * size
 
-    def hash(self, key):
+    def my_hash(self, key):
         # Get the remainder of the hash table size and the hash of the key
         return hash(key) % self.size
 
     def insert(self, key, value):
         #  Set the key as the modules so it fits in the table
-        index = self.hash(key)
+        index = self.my_hash(key)
 
         if self.table[index] is None:
             self.table[index] = [(key, value)]
@@ -22,7 +22,7 @@ class HashTable:
 
     def get(self, key):
         # re hash the letter to get the index
-        index = self.hash(key)
+        index = self.my_hash(key)
         # make sure there is a value
         if self.table[index] is not None:
             # unpack and get the value we need
@@ -33,7 +33,7 @@ class HashTable:
 
     def remove(self, key):
         # re hash the letter to get the index
-        index = self.hash(key)
+        index = self.my_hash(key)
             # make sure there is a value
         if self.table[index] is not None:
             # make sure to check for any multiple values thet might be stored 
@@ -45,12 +45,12 @@ class HashTable:
 
 # Example usage:
 hash_table = HashTable(10)
-hash_table.insert('a', 1)
-hash_table.insert('b', 2)
-hash_table.insert('c', 3)
+hash_table.insert('a', 17)
+hash_table.insert('b', 300.00)
+hash_table.insert('c', "Password")
 
-print("Value for key 'a':", hash_table.get('a'))  # Output: Value for key 'a': 1
-print("Value for key 'd':", hash_table.get('d'))  # Output: Value for key 'd': None
+print("Value for key 'a':", hash_table.get('a'))  # Output: Value for key 'a': 7
+print("Value for key 'c':", hash_table.get('c'))  # Output: Value for key 'c': 2
 
 # PLace breakpoint and rerun to see duplicated values
 hash_table.remove('b')

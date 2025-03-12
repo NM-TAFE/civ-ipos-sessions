@@ -8,5 +8,8 @@ def simple_hash(name):
 
 # Example usage
 print(simple_hash("Ahmed"))  # Output: 1
-print(simple_hash("Smith"))  # Output: 0
+print(simple_hash("Ian"))  # Output: 4
+print(simple_hash("Caityln"))  # Output: 4
+print(simple_hash("John"))  # Output: 4
+
 

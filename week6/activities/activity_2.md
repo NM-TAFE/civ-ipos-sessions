@@ -1,14 +1,12 @@
 # Activity: Implementing a Queue in Python
 
-In this activity, you will create a Queue data structure in Python, a concept commonly used in computer science. A queue follows the **First In, First Out (FIFO)** principle, meaning the first item added to the queue is the first to be removed.
+Create a Queue data structure following the **First In, First Out (FIFO)** principle,
+i.e. the first item added to the queue is the first to be removed.
 
 ---
 
-## Instructions
-
 1. **Create a new Python file:**
 
-   - Open your preferred code editor.
    - Create a new Python file and name it `queue.py`.
 
 2. **Define the `Queue` class:**
