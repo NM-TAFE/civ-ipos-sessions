@@ -1,4 +1,5 @@
 import pprint
+# Special methods: See https://realpython.com/python-repr-vs-str/
 
 class Book:
     def __init__(self, title, author, year):
@@ -40,8 +41,11 @@ library.add_book(book2)
 library.add_book(book3)
 
 # Printing the library (calls __str__)
-# print(library)
+print(f"Print Library using __str__: {library}")
+# Inspecting the library (calls __repr__)
+print(f"Print Library using __repr__: {repr(library)}")
+pprint.pprint(f"PPrint Library using __repr__: {repr(library)}")
 
-# # Inspecting the library (calls __repr__)
-# print(repr(library))
-pprint.pprint(repr(library))
+# Inspecting the book (calls __repr__)
+print(f"Print Book using __repr__: {repr(book1)}")
+pprint.pprint(f"PPrint Book using __repr__: {repr(book1)}")

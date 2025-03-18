@@ -112,3 +112,8 @@ This lesson is tailored to address key aspects of the UoC, ICTPRG443 - Apply Int
 The knowledge aspects, such as development methodologies, programming methodologies, documentation techniques, and debugging tools and methodologies, are integrated across the lesson, ensuring students are equipped with both practical skills and the underlying knowledge.
 
 ---
+
+
+Brian Kernighan offers this classic advice: “Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as you can, you are, by definition, not smart enough to debug it.”
+
+Martelli, Alex; Ravenscroft, Anna Martelli; Holden, Steve; McGuire, Paul. Python in a Nutshell (p. 846). (Function). Kindle Edition. 

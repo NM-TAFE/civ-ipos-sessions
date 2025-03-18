@@ -14,7 +14,7 @@ sys.path.insert(0, str(current_dir.parent))
 
 project = 'Demo Doc'
 copyright = '2024, NM Tafe'
-author = 'Raf @ NM Tafe'
+author = 'Raf & John @ NM Tafe'
 release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
