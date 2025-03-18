@@ -12,7 +12,7 @@ import sys
 # import os
 
 def add_task(tasks, task):
-    tasks.append((task, False))
+    task.append((task, False))
 
 def mark_task_completed(tasks, index):
     if 0 <= index < len(tasks):
