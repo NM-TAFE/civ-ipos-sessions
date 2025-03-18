@@ -7,13 +7,12 @@ The goal is to find and fix the bugs.
 Ensure you step through this program in pdb only to understand how the program works and to find the bugs.'''
 
 # Once debugged add some documentation examples to help the next programmer!
-
 import sys
-# import os
 import pdb
+# import os
 
 def add_task(tasks, task):
-    pdb.set_trace()
+    # pdb.set_trace()
     task.append((task, False))
 
 def mark_task_completed(tasks, index):
@@ -58,7 +57,7 @@ def binary_search(tasks, target):
     return -1
 
 def main():
-    pdb.set_trace()
+    # pdb.set_trace()
     tasks = []
 
     while True:

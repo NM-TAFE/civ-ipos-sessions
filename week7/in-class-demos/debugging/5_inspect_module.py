@@ -22,28 +22,28 @@ x = A()
 #     raise
 
 # NOTE: This example also shows an implementation of a helper function to use on any class
-import sys, inspect, logging
+# import sys, inspect, logging
 
 # Configuring logging to write to a file
-logging.basicConfig(filename='./logs/_app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-
-def show_obj_methods(obj, name, show=sys.stderr.write):
-    show(f"{name} is type {type(obj)}({obj!r})\n")
-    show(f"{name}'s methods are: ")
-
-    # Logging
-    logging.info(f"{name} is type {type(obj)}({obj!r})")
-    logging.info(f"{name}'s methods are: ")
-
-    for n, v in inspect.getmembers(obj, callable):
-       show(f"Members loop {n} ")
-       logging.info(f"Members loop {n} ")
-    show('\n')
-
-
-# And then the example becomes just:
-try:
-    x.f()
-except AttributeError:
-    show_obj_methods(x, 'x')
-    raise
+# logging.basicConfig(filename='./logs/_app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+#
+# def show_obj_methods(obj, name, show=sys.stderr.write):
+#     show(f"{name} is type {type(obj)}({obj!r})\n")
+#     show(f"{name}'s methods are: ")
+#
+#     # Logging
+#     logging.info(f"{name} is type {type(obj)}({obj!r})")
+#     logging.info(f"{name}'s methods are: ")
+#
+#     for n, v in inspect.getmembers(obj, callable):
+#        show(f"Members loop {n} ")
+#        logging.info(f"Members loop {n} ")
+#     show('\n')
+#
+#
+# # And then the example becomes just:
+# try:
+#     x.f()
+# except AttributeError:
+#     show_obj_methods(x, 'x')
+#     raise

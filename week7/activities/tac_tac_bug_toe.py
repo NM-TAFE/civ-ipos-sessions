@@ -1,7 +1,7 @@
 '''A buggy Tic-Tac-Toe game that provides an opportunity to debug code by both reasoning about it and stepping through it in a debugger.
 The program has a number of bugs that are introduced one at a time. The goal is to find and fix the bugs.
-Ensure you step through this program in an IDE debuggerto understand how the program works and to find the bugs.'''
-
+Ensure you step through this program in an IDE debugger to understand how the program works and to find the bugs.'''
+#TODO Add pytest to show debugging
 board = [[' ' for _ in range(3)] for _ in range(3)]
 
 def print_board():
