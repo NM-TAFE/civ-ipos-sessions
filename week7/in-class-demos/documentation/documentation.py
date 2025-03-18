@@ -1,3 +1,6 @@
+# TODO show on pydoc
+import numpy as np
+
 def any(a, axis=None, out=None, keepdims=np._NoValue, *, where=np._NoValue):
     """
     Test whether any array element along a given axis evaluates to True.
