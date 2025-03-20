@@ -2,6 +2,7 @@ class HashTable:
     def __init__(self, size):
         self.size = size
         self.table = [None] * size
+        # print(id(self.table), self.table)
 
     def my_hash(self, key):
         # Get the remainder of the hash table size and the hash of the key
@@ -48,6 +49,11 @@ hash_table = HashTable(10)
 hash_table.insert('a', 17)
 hash_table.insert('b', 300.00)
 hash_table.insert('c', "Password")
+hash_table.insert('d', "AnotherPassword")
+hash_table.insert('e', "123564")
+hash_table.insert('f', "John Robertson")
+
+print(hash_table)
 
 print("Value for key 'a':", hash_table.get('a'))  # Output: Value for key 'a': 7
 print("Value for key 'c':", hash_table.get('c'))  # Output: Value for key 'c': 2
