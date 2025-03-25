@@ -4,6 +4,7 @@
 flask_tic_tac_toe/
 │
 ├── flask_tic_tac_toe/
+│   ├── __init__.py
 │   └── app.py
 ├── templates/
 │   └── index.html

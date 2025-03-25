@@ -27,6 +27,12 @@ source venv/bin/activate  # On Windows, use venv\Scripts\activate
 
 If the wheel file is located in a different directory (e.g., `dist/`), you can specify the path to the wheel file:
 
+Upgrade setuptools
+
+```bash
+pip install --upgrade pip setuptools
+```
+
 ```bash
 pip install /path/to/flask_tic_tac_toe-0.1.0-py3-none-any.whl
 ```

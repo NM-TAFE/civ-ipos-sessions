@@ -6,7 +6,10 @@
 flask_tic_tac_toe/
 │
 ├── flask_tic_tac_toe/
+│   └──__init__.py
 │   └── app.py
+│   └── templates/
+|       └── index.html
 ├── templates/
 │   └── index.html
 └── setup.py
@@ -20,6 +23,7 @@ flask_tic_tac_toe/
    ** The command below may need you to install setuptools**
 
    ```
+   pip install setuptools wheel
    python setup.py bdist_wheel
    ```
 

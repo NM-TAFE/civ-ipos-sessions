@@ -6,6 +6,7 @@
 flask_tic_tac_toe/
 │
 ├── flask_tic_tac_toe/
+│   └──__init__.py
 │   └── app.py
 │   └── templates/
 |       └── index.html
@@ -36,8 +37,8 @@ python = "^3.8"
 flask = "^2.0"
 
 [build-system]
-requires = ["poetry>=1.0"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 ```
 
 #### **Complete the Steps**
@@ -62,7 +63,7 @@ Install the dependencies and build the project:
 3. Export dependencies to `requirements.txt`: (pycharm may offer a link to install the packages)
 
    ```
-   poetry export -f requirements.txt > requirements.txt (this can also be done with pip freeze)
+   poetry export -f requirements.txt --output requirements.txt
 
    ```
 
