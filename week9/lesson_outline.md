@@ -13,6 +13,9 @@
 git remote add upstream https://github.com/NM-TAFE/civ-ipos-2025s1-at2-portfolio-por-part-2-pin-civ-assessment-ipos-portfolio-2.git
 git fetch upstream
 git merge upstream/main
+ # use this only if you need to reset and try again
+git remote remove upstream
+ # if you need to merge your work do this and avoid needing a merge message
+git merge upstream/main --no-edit
 
-git remote remove upstream # use this only if you need to reset and try again
 ```
