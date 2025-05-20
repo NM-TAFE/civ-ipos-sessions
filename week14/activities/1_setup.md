@@ -62,7 +62,7 @@ Same as above, with the following additions:
    ```
 
    ```python
-   python setup.py sdist
+   python -m setup.py sdist
    ```
 
 3. Install it in a virtual environment:
