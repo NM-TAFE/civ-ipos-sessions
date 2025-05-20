@@ -40,7 +40,7 @@ pip install /path/to/flask_tic_tac_toe-0.1.0-py3-none-any.whl
 Alternatively, if you copied the wheel file into your new directory, just install it directly:
 
 ```bash
-pip install flask_tic_tac_toe-0.1.0-py3-none-any.whl
+pip install --force-reinstall dist/flask_tic_tac_toe_setup-0.1.0-py3-none-any.whl
 ```
 
 ### 3. **Verify the Installation**
@@ -58,7 +58,7 @@ You should see `flask_tic_tac_toe` (or the package name in the wheel) listed.
 You can now run it from this new environment.
 
 ```bash
-flask run
+ flask --app flask_tic_tac_toe run
 ```
 
 Make sure you have set the appropriate `FLASK_APP` environment variable or use the `--app` option as needed.

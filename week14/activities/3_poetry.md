@@ -60,10 +60,10 @@ Install the dependencies and build the project:
    poetry build
    ```
 
-3. Export dependencies to `requirements.txt`: (pycharm may offer a link to install the packages)
+3. Install your depenedencies using poetry **(see : https://python-poetry.org/docs/cli/#install)**
 
    ```
-   poetry export -f requirements.txt --output requirements.txt
+   poetry install
 
    ```
 
@@ -73,13 +73,16 @@ Install the dependencies and build the project:
 2. Run the Flask app with:
 
    ```
-   poetry run flask run
-   ```
-
-   **Note** you may need:
-
-   ```
-   flask --app flask_tic_tac_toe/app.py run
+   poetry run    flask --app flask_tic_tac_toe/app.py run
    ```
 
 3. Build the package using `poetry build`.
+
+   - Used for publishing to PyPI or internal repos.
+   - Can be installed via `pip install dist/*.whl` or `pip install dist/*.tar.gz`.
+
+   ```
+   dist/
+   ├── your_package-0.1.0.tar.gz   ← Source distribution
+   └── your_package-0.1.0-py3-none-any.whl ← Wheel distribution
+   ```
