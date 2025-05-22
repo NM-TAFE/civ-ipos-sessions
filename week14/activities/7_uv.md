@@ -26,6 +26,15 @@ flask_tic_tac_toe/
 curl -Ls https://astral.sh/uv/install.sh | sh
 ```
 
+**to run on NM Tafe desktops use the full path**
+```powershell
+/c/Users/ROBERJ/.local/bin/uv {your_command}
+```
+```bash
+& "C:\Users\ROBERJ\.local\bin\uv.exe" {your_command}
+```
+
+
 2. Create a new isolated environment:
 
 ```bash

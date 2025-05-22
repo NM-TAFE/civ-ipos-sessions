@@ -1,7 +1,7 @@
-# import logging
+import logging
 
 # Setup basic config for logging
-# logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Our decorator
 def logger(func):
@@ -9,9 +9,9 @@ def logger(func):
     # **kwargs any number of keyword arguments as a dictionary
     def wrapper(*args, **kwargs):
 
-        print('Args: ',args)
-        print('Kwargs: ',kwargs)
-        # logging.info(f"Running function: {func.__name__}")
+        # print('Args: ',args)
+        # print('Kwargs: ',kwargs)
+        logging.info(f"Running function: {func.__name__}")
         return func(*args, **kwargs)
     return wrapper
 
@@ -20,5 +20,5 @@ def logger(func):
 def greet(name, key):
     print(f"Hi, {name}")
 
-greet("Robbo", 'firstname')
-greet(name="Robbo", key="firstname")
+# greet("Robbo", 'firstname')
+greet(name="Robbo", key="firstname", name2="Robbo", key2="firstname")

@@ -23,4 +23,5 @@ notifier = EventNotifier()
 notifier.subscribe(log_event)
 notifier.subscribe(send_alert)
 
+# The event itself
 notifier.notify("File uploaded")
