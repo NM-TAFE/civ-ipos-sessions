@@ -24,7 +24,7 @@ cd REPO_NAME
 The upstream is the **original repository** you forked from (e.g., your instructor's or the class repo).
 
 ```bash
-git remote add upstream https://github.com/NM-TAFE/dip-web-application-development-classes.git
+git remote add upstream https://github.com/NM-TAFE/civ-ipos-sessions.git
 ```
 
 You can check that both remotes are set correctly:
@@ -38,19 +38,19 @@ Expected output:
 ```
 origin    https://github.com/YOUR_USERNAME/REPO_NAME.git (fetch)
 origin    https://github.com/YOUR_USERNAME/REPO_NAME.git (push)
-upstream  https://github.com/NM-TAFE/dip-web-application-development-classes.git (fetch)
-upstream  https://github.com/NM-TAFE/dip-web-application-development-classes.git (push)
+upstream  https://github.com/NM-TAFE/civ-ipos-sessions.git (fetch)
+upstream  https://github.com/NM-TAFE/civ-ipos-sessions.git (push)
 ```
 
 ---
 
 ## Step 3: Pull Updates from Upstream
 
-To get the latest changes from the `main` branch of the original repo into **your own branch**, follow either **merge** or **rebase** instructions below.
+To get the latest changes from the **smesters branch** branch of the original repo into **your own branch**, follow either **merge** or **rebase** instructions below.
 
 ---
 
-### Option 1: **Merge** `upstream/main` into your branch
+### Option 1: **Merge** `upstream/<BRANCH_NAME>` into your branch
 
 This is safer and easier for beginners.
 
@@ -69,7 +69,7 @@ This is safer and easier for beginners.
 3. Merge those changes into your branch:
 
    ```bash
-   git merge upstream/main
+   git merge upstream/<BRANCH_NAME>
    ```
 
 4. If you see conflicts, Git will guide you to resolve them. Open the conflicting files, fix them, then:
@@ -81,7 +81,7 @@ This is safer and easier for beginners.
 
 ---
 
-### Option 2: **Rebase** your branch onto `upstream/main`
+### Option 2: **Rebase** your branch onto `upstream/<BRANCH_NAME>`
 
 This keeps your history cleaner, but should only be used **before pushing your branch** to GitHub.
 
@@ -100,7 +100,7 @@ This keeps your history cleaner, but should only be used **before pushing your b
 3. Rebase your branch onto upstream/main:
 
    ```bash
-   git rebase upstream/main
+   git rebase upstream/<BRANCH_NAME>
    ```
 
 4. If there are conflicts:
