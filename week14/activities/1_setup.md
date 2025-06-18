@@ -3,13 +3,13 @@
 **Project structure:**
 
 ```
-flask_tic_tac_toe/
+project_directory/
 │
 ├── flask_tic_tac_toe/
 │   ├── __init__.py
 │   └── app.py
-├── templates/
-│   └── index.html
+│   └── templates/
+│     └── index.html
 └── setup.py
 ```
 
@@ -35,40 +35,52 @@ setup(
 )
 ```
 
+---
+
+### `MANIFEST.in`
+
+```
+recursive include flask_tic_tac_toe/templates *
+recursive-include flask_tic_tac_toe/static *
+```
+
 #### **Complete the steps**
+
+1. Create a virtual environment and activate it.
+
+```python
+python -m venv myenv
+source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate
+```
 
 Same as above, with the following additions:
 
-1. Build and package the app:
+2. Build and package the app:
 
-   ```
-   python setup.py sdist
-   ```
-
-   ```
+   ```python
    python -m pip install --upgrade setuptools
    ```
 
-2. Install it in a virtual environment:
+   ```python
+   python -m setup.py sdist
    ```
+
+3. Install it in a virtual environment:
+   ```python
    pip install .
    ```
 
 #### **Notes**
 
-1. Create a virtual environment and activate it.
-
-```
-python -m venv myenv
-source myenv/bin/activate  # On Windows, use: myenv\Scripts\activate
-```
-
-2. Run `python setup.py sdist` to create the distribution.
-3. Install the package using `pip install .`. (`python -m pip install .`)
-4. Run the Flask app using:
+1. Try running the Flask app using:
+   ```python
+   python -m flask --app flask_tic_tac_toe run
    ```
-   flask run
-   python -m flask run
+2. Any dist issue cleanup and start again
+   ```python
+   rm -rf dist/ build/ flask_tic_tac_toe.egg-info
+   python setup.py sdist
+   pip install dist/*.tar.gz
    ```
 
 ---

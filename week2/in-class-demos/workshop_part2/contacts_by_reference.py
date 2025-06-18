@@ -1,6 +1,6 @@
-# Step debug through the code, each function and the first line of the if statement 
-# Run the code 
-# Ask student to compare the contact list id and the organisation contacts list id 
+# Step debug through the code, each function and the first line of the if statement
+# Run the code - note the in built id method uses memory addresses to create a unique id for objects in memory
+# Compare the contact list id and the organisation contacts list id
 # at the end to further explain pass by object reference
 
 class Contact:
@@ -11,21 +11,21 @@ class Contact:
 def add_contact(contacts, name, email):
     # Create a new Contact object with the provided name and email
     new_contact = Contact(name, email)
-    print('new contact id', id(new_contact))  # Print the id of the new Contact object
-    contacts.append(new_contact)  # Append the new Contact object to the contacts list
-    print('contact list id', id(contacts))  # Print the id of the contacts list after modification
+    print('new contact id', id(new_contact))
+    contacts.append(new_contact)
+    print('contact list id', id(contacts))
 
 def modify_contact_name(contact, new_name):
     # Modify the 'name' attribute of the Contact object
     contact.name = new_name
-    print('contact id', id(contact))  # Print the id of the modified Contact object
+    print('contact id', id(contact))
 
 def display_contacts(contacts):
     for contact in contacts:
         # Display the name, email, and id of each Contact object in the contacts list
         print(f"Name: {contact.name}, Email: {contact.email}")
-        print('contact id', id(contact))  # Print the id of each Contact object
-        print('contact list id', id(contacts))  # Print the id of the contacts list
+        print('contact id', id(contact))
+        print('contact list id', id(contacts))
 
 if __name__ == "__main__":
     organisation_contacts = []
@@ -43,4 +43,3 @@ if __name__ == "__main__":
 
     print("\nContacts after modification:")
     display_contacts(organisation_contacts)
-

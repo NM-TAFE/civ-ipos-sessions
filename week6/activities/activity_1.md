@@ -1,14 +1,12 @@
 # Activity: Implementing a Stack in Python
 
-In this activity, you will create a Stack data structure in Python, a concept commonly used in computer science. A stack follows the **Last In, First Out (LIFO)** principle, meaning the last item added to the stack is the first to be removed.
+Create a Stack data structure following the **Last In, First Out (LIFO)** principle,
+i.e. the last item added to the stack is the first to be removed.
 
 ---
 
-## Instructions
-
 1. **Create a new Python file:**
 
-   - Open your preferred code editor.
    - Create a new Python file and name it `stack.py`.
 
 2. **Define the `Stack` class:**

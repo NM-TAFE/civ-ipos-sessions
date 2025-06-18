@@ -4,9 +4,10 @@
 flask_tic_tac_toe/
 │
 ├── flask_tic_tac_toe/
+│   ├── __init__.py
 │   └── app.py
-├── templates/
-│   └── index.html
+│   └── templates/
+│     └── index.html
 └── requirements.txt
 ```
 
@@ -29,16 +30,13 @@ The following steps will install the dependencies and run the app:
 
 2. Install the dependencies:
 
-   ```
+   ```python
    pip install -r requirements.txt
    ```
 
 3. Run the Flask app:
 
-   ```
-   flask run
-   ```
+   ```python
+   python -m flask_tic_tac_toe.app
 
-4. Create a virtual environment and activate it.
-5. Install the required packages using `pip install -r requirements.txt`.
-6. Run `flask run` to start the app.
+   ```

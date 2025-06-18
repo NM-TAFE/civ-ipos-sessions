@@ -33,7 +33,7 @@
 - Task: Write unit tests for a simple calculator function (addition, subtraction).
 - Participants will write tests, execute them, and interpret the results.
 
-### Test Discovery and Organizing Test Suites
+### Test Discovery and Organising Test Suites
 
 - Using unittest's test discovery mechanism to find and run tests.
 

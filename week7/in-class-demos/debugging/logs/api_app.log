@@ -1,0 +1,12 @@
+2025-03-20 11:30:26,175 - DEBUG - Requesting weather data for coordinates: lat=-31.9505, lon=115.8605
+2025-03-20 11:30:26,177 - DEBUG - Starting new HTTPS connection (1): api.openweathermap.org:443
+2025-03-20 11:30:27,379 - DEBUG - https://api.openweathermap.org:443 "GET /data/2.5/weather?lat=44.34&lon=10.99&appid=7761a681 HTTP/1.1" 401 108
+2025-03-20 11:30:27,381 - ERROR - HTTP error occurred: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=7761a681
+2025-03-20 11:30:27,385 - ERROR - Traceback (most recent call last):
+  File "c:\laragon\www\johnr\civ-ipos-sessions\week7\in-class-demos\debugging\4_api_logging.py", line 20, in get_weather
+    response.raise_for_status()  # Raises an HTTPError for bad responses
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\laragon\www\johnr\civ-ipos-sessions\week7\in-class-demos\debugging\.dbenv\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=7761a681
+

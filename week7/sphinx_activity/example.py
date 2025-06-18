@@ -12,6 +12,7 @@ Typical usage example:
   foo = ClassFoo()
   bar = foo.FunctionBar()
 """
+# TODO run quick start 2 ways in virtuals env
 
 from typing import Sequence, Mapping
 

@@ -6,9 +6,9 @@
 flask_tic_tac_toe/
 │
 ├── flask_tic_tac_toe/
+│   └──__init__.py
 │   └── app.py
-├── templates/
-│   └── index.html
+│   └── templates/
 └── setup.py
 ```
 
@@ -20,18 +20,16 @@ flask_tic_tac_toe/
    ** The command below may need you to install setuptools**
 
    ```
+   pip install setuptools wheel
    python setup.py bdist_wheel
    ```
 
 2. Install the `.whl` file locally:
+   **watch out for your setup name here**
 
    ```
    pip install dist/flask_tic_tac_toe-0.1.0-py3-none-any.whl
    ```
-
-3. Create the `.whl` file using `python setup.py bdist_wheel`.
-4. Install it using `pip install <your_wheel>.whl`.
-5. Run the app with `flask run`.
 
 ### **Steps to Include `app.py` and `templates` in the Wheel**
 
@@ -49,7 +47,9 @@ To include the `templates` directory (or other non-code files like `static/`), c
 **Example `MANIFEST.in`:**
 
 ```text
-recursive-include flask_tic_tac_toe/templates *
+recursive include flask_tic_tac_toe/templates *
+recursive-include flask_tic_tac_toe/static *
+
 ```
 
 This line tells `setuptools` to include everything inside the `templates/` directory in the package.
@@ -72,24 +72,6 @@ setup(
         'flask',
     ],
 )
-```
-
-#### **3. Project Structure**
-
-Here’s an example of how your project structure should look:
-
-```
-flask_tic_tac_toe/
-│
-├── flask_tic_tac_toe/
-│   ├── app.py                 # Flask app code
-│   ├── __init__.py            # __init__.py if your package is a module
-│   └── templates/             # Template files
-│       └── index.html
-├── setup.py                   # Only for setuptools
-├── pyproject.toml              # Only for Poetry
-├── MANIFEST.in                 # For including non-code files with setuptools
-└── README.md
 ```
 
 ### **4. Ways to Build the Wheel**
@@ -117,5 +99,5 @@ You can verify that your `app.py` and `templates/` directory have been included 
 
 1. **Extract the contents of the wheel:**
    ```bash
-   unzip flask_tic_tac_toe-0.1.0-py3-none-any.whl -d wheel_content/
+   unzip dist/flask_tic_tac_toe-0.1.0-py3-none-any.whl -d wheel_content/
    ```

@@ -4,11 +4,11 @@ import logging
 import pprint
 import traceback
 
-# # Set up logging
+# Set up logging
 # logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Configuring logging to write to a file
-logging.basicConfig(filename='app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='./logs/_app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Logging levels
 logging.debug("This is a debug message")
@@ -24,7 +24,8 @@ def log_message(message):
     """Prints a message with contextual information."""
     caller = inspect.stack()[1]
     timestamp = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-    print(f" Log Message output: [{timestamp}] {caller.function} (line {caller.lineno}): {message}")
+    pprint.pprint(caller) # test for the method sending the error
+    logging.info(f"Log Message output: [{timestamp}] {caller.function} (line {caller.lineno}): {message}")
 
 def conditional_print(message):
     """Prints a message only if debugging is enabled."""
@@ -45,11 +46,11 @@ def process_numbers(numbers):
         conditional_print(f"Modified numbers (doubled): {modified}")
 
         # Print detailed structure of modified numbers
-        pprint.pprint(modified)
+        pprint.pp(modified)
         
         return modified
-    except Exception as error:
-        logging.error(f"Error processing numbers: {error}")
+    except Exception as e:
+        logging.error(f"Error processing numbers: {e}")
         traceback.print_exc()
         return None
 
@@ -59,7 +60,7 @@ numbers = [5, -3, 2, -8, 7, 10, -1, 0]
 
 try:
     result = process_numbers(numbers)
-    log_message(f"Final result: {result}") #c change to incorrect variable name
+    log_message(f"Final result: {result}") # change to incorrect variable name
 except Exception as error:
     logging.error(f"An unexpected error occurred: {error}")
     traceback.print_exc()

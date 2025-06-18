@@ -1,5 +1,5 @@
-# Define a Location Data Class
-# Create a Python data class named Location with name and latitude attributes.
+
+
 # Create a Graph Class:
 # Implement a Graph class to represent the map.
 # The Graph class should allow adding locations as vertices and connections between them as edges.
@@ -10,16 +10,17 @@
 # Print the connections between locations to visualize the map structure.
 
 from dataclasses import dataclass
-
+# Define a Location Data Class
+# Include name and latitude/longitude attributes.
 class Location:
     name: str
-    latitude: float
-    longitude: float
+    # latitude: float
+    # longitude: float
 
 class Graph:
     def __init__(self):
         # Dictionary to store location names as keys and lists of connected locations as values
-        self.vertices = {}  
+        pass
 
     def add_location(self, location):
         # Create an empty list for each location's connections
@@ -44,36 +45,22 @@ class Graph:
         # else:
         #     print(f"One or both locations '{location1_name}' and '{location2_name}' do not exist in the graph.")
 
-    def display(self):
-        # Loop through the Graph object and print the connections
-        pass
-            # connections = " -> ".join()
-            # print(f"{location}: {connections}")
 
 # Example usage:
 def main():
-    # Step 1: Create Locations
+    # Step 1: Create 3 Locations exzmple
     location1 = Location(name="LocationA", latitude=40.7128, longitude=30.7008)
-    location2 = Location(name="LocationB", latitude=34.0522, longitude=31.7128)
-    location3 = Location(name="LocationC", latitude=51.5074, longitude=34.5728)
-    location4 = Location(name="LocationD", latitude=48.8566, longitude=38.7333)
 
     # Step 2: Create a Graph and Add Locations
     graph = Graph()
-    graph.add_location(location1)
-    graph.add_location(location2)
-    graph.add_location(location3)
-    graph.add_location(location4)
 
-    # Step 3: Add Connections
+    # Step 3: Add Connections - example usage
     graph.add_connection("LocationA", "LocationB")
-    graph.add_connection("LocationA", "LocationC")
-    graph.add_connection("LocationB", "LocationD")
-    graph.add_connection("LocationC", "LocationD")
+
 
     # Step 4: Display the Graph (Map)
     print("Map representation:")
-    graph.display()
+    # graph.display()
 
 if __name__ == "__main__":
     main()
