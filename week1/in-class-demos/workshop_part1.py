@@ -5,15 +5,6 @@
 #
 #
 # #sequential
-# for animal in animals:
-#     # check in each object for the string
-#     # if it si there
-#      if animal == 'Zebra':
-#         has_zebra = True
-#         break
-#     else:
-#     # it it isnt there move on
-#         has_zebra = False
 # try:
 #     print(f'LIst contains a zebra? {has_zebra}')
 # except ValueError:
@@ -31,10 +22,7 @@ print(animals)
 animals = set(animals)
 print(animals)
 
-
-
 # animals
-
 class Animal:
     def __init__(self, name, characteristic):
         self.name = name
