@@ -5,11 +5,8 @@
 #
 #
 # #sequential
-# try:
-#     print(f'LIst contains a zebra? {has_zebra}')
-# except ValueError:
-#     print('No value found')
 #
+# #random
 # print(f"Has zebra?  {"Zebra" in animals}")
 #
 # animals = tuple(animals)
