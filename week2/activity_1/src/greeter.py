@@ -1,7 +1,7 @@
 '''Considering reuse (modularisation)
 when creating python programs'''
-def greet():
-    print("Hello, World!")
+def greet(name):
+    print(f"Hello, {name}")
 
 # create a calculator class and re-use this by instantiating it in the main.py
 
@@ -14,3 +14,5 @@ def greet():
 
     # above is __main__ when running directly
     # only called when a script
+
+# greet('John')
