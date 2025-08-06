@@ -7,7 +7,7 @@
 # Add a few locations with specific names and latitudes.
 # Connect these locations to simulate a map.
 # Display the Map:
-# Print the connections between locations to visualize the map structure.
+# Print the connections between locations to visualise the map structure.
 
 from dataclasses import dataclass
 # Define a Location Data Class

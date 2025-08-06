@@ -2,11 +2,9 @@
 # TODO attributes for project: 
 # TODO behaviours for project
 
-
 # one organisation
 
 # one contact for the orgsnaitions
-
 
 
     # Challenge - define a function from your tests that:

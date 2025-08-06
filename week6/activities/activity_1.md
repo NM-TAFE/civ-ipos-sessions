@@ -1,9 +1,5 @@
-# Activity: Implementing a Stack in Python
-
 Create a Stack data structure following the **Last In, First Out (LIFO)** principle,
 i.e. the last item added to the stack is the first to be removed.
-
----
 
 1. **Create a new Python file:**
 
@@ -12,7 +8,7 @@ i.e. the last item added to the stack is the first to be removed.
 2. **Define the `Stack` class:**
 
    - Write a class called `Stack`.
-   - Add an `__init__` method that initializes an empty list to represent the stack.
+   - Add an `__init__` method that initialises an empty list to represent the stack.
 
 3. **Add the `push` method:**
 
@@ -32,5 +28,3 @@ i.e. the last item added to the stack is the first to be removed.
    - At the end of your file, create an instance of the `Stack` class.
    - Add some items using the `push` method.
    - Remove and print items using the `pop` method.
-
----

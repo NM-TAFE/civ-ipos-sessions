@@ -1,4 +1,3 @@
-# using deque class
 from collections import deque
 
 class Queue:

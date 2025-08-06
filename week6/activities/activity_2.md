@@ -1,9 +1,5 @@
-# Activity: Implementing a Queue in Python
-
 Create a Queue data structure following the **First In, First Out (FIFO)** principle,
 i.e. the first item added to the queue is the first to be removed.
-
----
 
 1. **Create a new Python file:**
 
@@ -12,7 +8,7 @@ i.e. the first item added to the queue is the first to be removed.
 2. **Define the `Queue` class:**
 
    - Write a class called `Queue`.
-   - Add an `__init__` method that initializes an empty list to represent the queue.
+   - Add an `__init__` method that initialises an empty list to represent the queue.
 
 3. **Add the `enqueue` method:**
 
@@ -37,5 +33,3 @@ i.e. the first item added to the queue is the first to be removed.
    - At the end of your file, create an instance of the `Queue` class.
    - Add some items using the `enqueue` method.
    - Remove and print items using the `dequeue` method.
-
----

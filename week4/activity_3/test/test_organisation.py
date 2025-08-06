@@ -1,4 +1,3 @@
-# test_organization.py
 import unittest
 from src.organisation import Organisation
 from src.contact import Contact
