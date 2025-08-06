@@ -1,4 +1,3 @@
-# 4D structure: List of Dicts -> List -> Dict -> Values
 data = [
     {
         "group1": [
@@ -22,9 +21,24 @@ data = [
     }
 ]
 
-# Traversing the 4D structure
-for i, dictionary in enumerate(data):  # Loop through the list of dictionaries
-    for key, sublist in dictionary.items():  # Loop through dictionary keys and lists
-        for j, subdict in enumerate(sublist):  # Loop through the list of dictionaries
-            for sub_key, value in subdict.items():  # Loop through dictionary items
+# Traversing(moving through) the structure
+for i, dictionary in enumerate(data):  # list of dictionaries
+    for key, sublist in dictionary.items():  # keys and lists
+        for j, subdict in enumerate(sublist):  # list of dictionaries
+            for sub_key, value in subdict.items():  # keys and values
                 print(f"data[{i}]['{key}'][{j}]['{sub_key}'] = {value}")
+
+
+def traverse(data, path="data"):
+    match data:
+        case dict():
+            for key, value in data.items():
+                traverse(value, f"{path}['{key}']")
+        case list():
+            for index, item in enumerate(data):
+                traverse(item, f"{path}[{index}]")
+        case _:
+            # Default case, not a collection
+            print(f"{path} = {data}")
+
+traverse(data)
