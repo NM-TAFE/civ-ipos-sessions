@@ -14,7 +14,3 @@ def add(number, number2):
 
     No error for Boolean see module below line 17
     """
-    if (isinstance(number, bool) or isinstance(number2, bool)):
-        return f"This is a boolean please enter a number"
-    
-    return number + number2
