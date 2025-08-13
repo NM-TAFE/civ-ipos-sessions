@@ -1,19 +1,33 @@
-from unittest.mock import Mock
+# weather_test_example.py
+from unittest.mock import Mock, patch
+import unittest
+import requests
+
+# Function to be tested
+def get_weather(city, get_function=requests.get):
+    response = get_function(f"https://api.weather.com/{city}")
+    return response.json()
 
 
-# Notes: If testing a function that retrieves weather data from an API,
-# instead of making a real API call, use a Mock.
-# The mock can be set up to return a sample weather report.
-# This ensures the test is quick, doesn't rely on network connectivity, and doesn't consume API calls.
+class TestWeather(unittest.TestCase):
+    def test_get_weather_success(self):
+        # Create a mock get function
+        mock_get = Mock()
+        
+        # Configure the mock to return a dummy JSON response
+        mock_get.return_value.json.return_value = {
+            "city": "Sydney",
+            "temperature": 25
+        }
 
-def get_weather(city):
-    # ... code to fetch weather for the city from an API
-    pass
+        # Call the function with the mock
+        result = get_weather("Sydney", get=mock_get)
+
+        # Assertions
+        self.assertEqual(result, {"city": "Sydney", "temperature": 25})
+        mock_get.assert_called_once_with("https://api.weather.com/Sydney")
 
 
-def test_get_weather():
-    # Mock the real API call
-    get_weather = Mock(return_value={"city": "Sydney", "temperature": 25})
-
-    result = get_weather("Sydney")
-    assert result == {"city": "Sydney", "temperature": 25}
+# Run the test when the file is executed
+if __name__ == "__main__":
+    unittest.main()

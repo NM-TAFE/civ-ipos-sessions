@@ -16,7 +16,7 @@ def get_contact_info(name):
 
 
 # Test class
-class TestWeather(unittest.TestCase):
+class TestContact(unittest.TestCase):
     def test_get_contact_info(self):
         # Mock the real API call
         get_contact_info = Mock(return_value=Contact(
@@ -30,3 +30,7 @@ class TestWeather(unittest.TestCase):
         assert self.result.name == "John Doe"
         assert self.result.address == {"city": "New York", "state": "NY", "zip": "10001"}
         assert self.result.billing_details == {"card_type": "Visa", "expiration_date": "12/25"}
+
+if __name__ == "__main__":
+    import unittest
+    unittest.main()

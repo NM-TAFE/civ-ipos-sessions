@@ -1,7 +1,5 @@
 # contact.py - what do we need here
-# TODO attributes for contact: 
-# TODO behaviours for contact:
+# TODO Step 2
 
-# belong to one organisation
 
 

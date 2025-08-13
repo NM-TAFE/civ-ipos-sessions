@@ -1,36 +1,29 @@
 from unittest import TestCase
 from unittest.mock import patch
-
-# Assuming contact_module.Contact and contact_module.create_contact exist
 from contact_module import create_contact
 
 
 class TestCreateContact(TestCase):
-    @patch('contact_module.Contact')  # Mocking the Contact class in the contact_module
+    @patch('contact_module.Contact')  # Mock the Contact class in the contact_module
     def test_create_contact(self, MockContact):
         """
-        Test the create_contact function to ensure it creates a Contact
-        instance correctly and returns the object with the expected attributes.
+        Ensure create_contact correctly instantiates a Contact object
+        with the provided name and email, and returns it.
         """
-        # Create a mock instance of Contact
-        mock_contact_instance = MockContact.return_value
-        mock_contact_instance.name = 'Alice'
-        mock_contact_instance.email = 'alice@example.com'
+        # Arrange: Set up expected input
+        name = 'John'
+        email = 'john@example.com'
 
-        # Call the function under test
-        # The actual implementation of create_contact should create a Contact instance
-        contact = create_contact('Alice', 'alice@example.com')
+        # Act: Call the function under test
+        contact = create_contact(name, email)
 
-        # Assert that the Contact class was called with the correct parameters
-        MockContact.assert_called_once_with('Alice', 'alice@example.com')
-        print(contact)
+        # Assert: Verify Contact was instantiated with correct arguments
+        MockContact.assert_called_once_with(name, email)
 
-        # Assert that the returned object has the expected attributes
-        self.assertEqual(contact.name, 'Alice')
-        self.assertEqual(contact.email, 'alice@example.com')
+        # Assert: The returned object is the mocked instance
+        self.assertEqual(contact, MockContact.return_value)
 
 
 if __name__ == "__main__":
     import unittest
-
     unittest.main()
