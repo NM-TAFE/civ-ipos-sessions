@@ -1,12 +1,27 @@
+import unittest
 
-# Types
-# int
-# act
-# float
-# complex
+class TestaddFunction(unittest.TestCase):
 
-# use case - whats left???
-# string
-# boolean
-# collections other objects
-# null values
+    pass
+    # Types
+    # int
+    # float
+    # complex
+
+
+    # TODO use case - whats left to test???
+    # string
+    # boolean
+    # collections other objects
+    # null values
+
+        # arrange
+
+            # act - type
+    
+            # act - type
+  
+        # assert
+
+if __name__ == "__main__":
+    unittest.main()
