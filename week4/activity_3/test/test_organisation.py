@@ -1,10 +1,17 @@
 # test_organization.py
 import unittest
 
-# Step 1
 
-        # Create an organization
+# Create an organization
+class TestOrganisation(unittest.TestCase):
+    # test that we create a name
+    pass
+        # arrange
+       
 
+        # act
+   
+        #assert
 
 
     # Step 3
