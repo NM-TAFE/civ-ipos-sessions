@@ -1,5 +1,5 @@
-# # # Slide 8
-# # # Open the file in binary mode to read bytes
+# Slide 8
+# Open the file in binary mode to read bytes
 # with open("example.txt", "rb") as file:
 #     # Read the contents of the file as bytes
 #     bytes_data = file.read()
@@ -40,29 +40,28 @@
 #     # Append the padded binary representation to the list
 #     binary_representations.append(padded_binary_representation)
 
-# # # # Print the binary representations
-# # # for binary_repr in binary_representations:
-# # #     print(binary_repr)
+# # Print the binary representations
+# for binary_repr in binary_representations:
+#     print(binary_repr)
 
 
-# Slide 20
-# Define a Unicode string
-unicode_str = "Hello, world!"
+# # Slide 20
+# # Define a Unicode string
+# unicode_str = "Hello, world!"
 
-# Encode the Unicode string using UTF-8 encoding
-bytes_obj_utf8 = unicode_str.encode('utf-8')
+# # Encode the Unicode string using UTF-8 encoding
+# bytes_obj_utf8 = unicode_str.encode('utf-8')
 
-# Decode the bytes object back to a Unicode string
-decoded_str = bytes_obj_utf8.decode('utf-8')
+# # Decode the bytes object back to a Unicode string
+# decoded_str = bytes_obj_utf8.decode('utf-8')
 
-print()
+# print()
 
-# Convert integer 42 to a bytes object
-bytes_array = (123).to_bytes(1, byteorder='big') # b'*'
+# # Convert integer 42 to a bytes object
+# bytes_array = (42).to_bytes(1, byteorder='big') # b'*'
 
-# Convert the bytes object back to an integer
-integer_from_bytes = int.from_bytes(bytes_array, byteorder='little') # 42
+# # Convert the bytes object back to an integer
+# integer_from_bytes = int.from_bytes(bytes_array, byteorder='little') # 42
 
-print("Bytes representation of 42:", bytes_array)
-print("Integer from bytes:", integer_from_bytes)
-
+# print("Bytes representation of 42:", bytes_array)
+# print("Integer from bytes:", integer_from_bytes)
