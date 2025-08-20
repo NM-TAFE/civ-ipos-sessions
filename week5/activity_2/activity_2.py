@@ -1,16 +1,23 @@
 def main():
     pass
         # Phase 1: File Navigation
+    with open('data_v2.bin', 'rb') as file:
+        # Navigate to the 5th byte position
+        file.seek(3)
+        # Read and print the next 4 bytes from the current position
+        print(f'First 3 bytes {file.read(3).decode('utf-8')}')
 
-            # Navigate to the 5th byte position
+        # Move the file pointer to the beginning of the file
+        file.seek(0)
+        # Read and print the first 100 pixels from the file
+        print(f'First 100 pixels {file.read(300).decode('utf-8')}')
 
-            # Read and print the next 4 bytes from the current position
-
-
-            # Move the file pointer to the beginning of the file
-
-            # Read and print the first 8 bytes from the file
-
+        print(f"Current position is: {file.tell()}")
+        position = file.read().find(b'D5 CE C7')
+        move_on = file.seek(20)
+        position_2 = file.read().find(b'D5 CE C7')
+        print(position)
+        print(position_2)
 
             # Print the current file pointer position
 

@@ -6,11 +6,11 @@ hello_str = "Hello"
 # hello_binary = ' '.join(format(ord(char), '08b') for char in hello_str)
 # print("Binary representation of 'Hello':", hello_binary)
 
-# # 2. Display "Hello" as hexadecimal
+# 2. Display "Hello" as hexadecimal
 # hello_hex = ' '.join(format(ord(char), '02x') for char in hello_str)
 # print("Hexadecimal representation of 'Hello':", hello_hex)
 
-# # 3. Display "Hello" as escape hex format (used in strings)
+# 3. Display "Hello" as escape hex format (used in strings)
 # hello_escape_hex = ''.join(f'Ox{format(ord(char), "02x")}' for char in hello_str)
 # print("Escape hex representation of 'Hello':", hello_escape_hex)
 
@@ -31,7 +31,7 @@ hello_str = "Hello"
 
 # # Converting the RGB Color (160, 32, 240)
 # # Now, we do the same for the RGB color purple (160, 32, 240)
-# purple_rgb = (160, 32, 240)
+purple_rgb = (160, 32, 240)
 
 # # 1. Display RGB components as binary
 # purple_binary = tuple(format(value, '08b') for value in purple_rgb)
@@ -50,8 +50,8 @@ hello_str = "Hello"
 # print("Bytes object of RGB (160, 32, 240):", purple_bytes)
 
 # # 5. Convert RGB values into a bytearray object
-# purple_bytearray = bytearray(purple_rgb)
-# print("Bytearray object of RGB (160, 32, 240):", purple_bytearray)
+purple_bytearray = bytearray(purple_rgb)
+print("Bytearray object of RGB (160, 32, 240):", purple_bytearray)
 
 
 # # | Value       | Binary Representation | Hexadecimal Representation | Escape Hex |
@@ -74,20 +74,20 @@ hello_str = "Hello"
 #         # Do something process(chunk)
 #         pass
 
-# # 7. File Pointer Operations (seek and tell)
-# with open("rgb_grid.bin", "rb") as file:
-#     print(file.tell())  # Outputs: 0 (start)
-#     file.seek(5)
-#     print(file.tell())  # Outputs: 5
-#     data = file.read(3)
-#     print(data)  # Outputs: b'Wor'
+# 7. File Pointer Operations (seek and tell)
+with open("rgb_grid.bin", "rb") as file:
+    print(file.tell())  # Outputs: 0 (start)
+    file.seek(5)
+    print(file.tell())  # Outputs: 5
+    data = file.read(3).decode('utf-8')
+    print(data)  # Outputs: b'Wor'
 
 # import struct
-
+#
 # # Packing an integer into binary format
 # binary_data = struct.pack("I", 12345)  # 'I' = unsigned int (4 bytes)
 # print(binary_data.hex())  # Outputs: '39300000' (Little-endian representation)
-
+#
 # # Unpacking binary data
 # unpacked_value = struct.unpack("I", binary_data)[0]
 # print(unpacked_value)  # Outputs: 12345
