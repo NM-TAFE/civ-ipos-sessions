@@ -1,4 +1,4 @@
-digraph WordGraph {
+diagram of WordGraph {
   "the capital" -> "of" [label="4"];
   "capital of" -> "france" [label="1"];
   "capital of" -> "germany" [label="1"];

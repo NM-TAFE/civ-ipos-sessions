@@ -1,3 +1,5 @@
+Consider a real world use case for a stack
+
 Create a Stack data structure following the **Last In, First Out (LIFO)** principle,
 i.e. the last item added to the stack is the first to be removed.
 
