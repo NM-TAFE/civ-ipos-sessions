@@ -1,0 +1,15 @@
+diagram of WordGraph {
+  "the capital" -> "of" [label="4"];
+  "capital of" -> "france" [label="1"];
+  "capital of" -> "germany" [label="1"];
+  "capital of" -> "spain" [label="1"];
+  "capital of" -> "italy" [label="1"];
+  "of france" -> "is" [label="1"];
+  "france is" -> "berlin" [label="1"];
+  "of germany" -> "is" [label="1"];
+  "germany is" -> "berlin" [label="1"];
+  "of spain" -> "is" [label="1"];
+  "spain is" -> "madrid" [label="1"];
+  "of italy" -> "is" [label="1"];
+  "italy is" -> "rome" [label="1"];
+}

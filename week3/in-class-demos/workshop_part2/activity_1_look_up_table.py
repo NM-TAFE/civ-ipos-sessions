@@ -1,46 +1,60 @@
-# We sometimes want to use the nested loops to created multidimensional structure
-# create a lookup table where each product code is associated
+# We sometimes want to use nested loops to create multidimensional structures
+# Now using dictionaries to associate each product code
 # with a tuple containing the product name and its price.
 
-# Define the function that creates the product lookup table
-def create_product_lookup_table(product_codes, product_info=None):
-    # TODO Initialise an empty dictionary to store the lookup table
-    lookup_table = {}
+# Define a function that creates the product lookup dictionary
+def build_catalogue(product_code_grid, product_data_grid):
+    # TODO: Initialise an empty dictionary to store the catalogue
+    product_catalogue = {}
+    # TODO: Iterate over the outer keys (e.g., rows or categories)
+    for outer_key in product_code_grid:
+        # TODO: Iterate over the inner keys (e.g., individual product codes)
+        print(outer_key)
+        for inner_key in product_code_grid[outer_key]:
+            print(inner_key)
+            # TODO: Retrieve the product code
 
-    # TODO Iterate over the rows of the product codes list
-    # product_codes = [
-    # 0 [0 'P1001', 1 'P1002'],
-    # 1 [0 'P1003', 1 'P1004']
-    # ]
-    for i in range(len(product_codes)):
-        # TODO Iterate over the elements in each row
-        for j in range(len(product_codes[i])):
-            # TODO Use the product code as the key for the dictionary
-            # print(product_codes[i][j])
-            key = (product_codes[i][j])
-            # TODO Use the corresponding product info as the value for the dictionary
-            value = product_info[i][j]
-            # TODO Add the key-value pair to the lookup table
-            lookup_table[key] = value
+            # TODO: Use the corresponding product data as the value
+            
+            # TODO: Add the code-data pair to the catalog
 
-    # Return the completed lookup table
-    return lookup_table
+    # Return the completed catalog
 
-# Create two 2D lists for product codes and product info
-product_codes = [['P1001', 'P1002'], ['P1003', 'P1004']] #traversing
-product_info = [[('Apple', 1.20), ('Banana', 0.50)], [('Cherry', 0.75), ('Date', 1.50)]]
 
-# Call the function with the product codes and product info lists
-product_lookup_table = create_product_lookup_table(product_codes, product_info)
+# Define the product code grid as a dictionary of dictionaries
+product_code_grid = {
+    'row1': {
+        'col1': 'P1001',
+        'col2': 'P1002'
+    },
+    'row2': {
+        'col1': 'P1003',
+        'col2': 'P1004'
+    }
+}
 
-# Print the resulting product lookup table
-print(product_lookup_table)
+# Define the product data grid (names and prices) as a matching structure
+product_data_grid = {
+    'row1': {
+        'col1': ('Apple', 1.20),
+        'col2': ('Banana', 0.50)
+    },
+    'row2': {
+        'col1': ('Cherry', 0.75),
+        'col2': ('Date', 1.50)
+    }
+}
 
-# # Generated result
+# Call the function with the new dictionary-based inputs
+product_catalog = build_catalogue(product_code_grid, product_data_grid)
+
+# Display the resulting product catalog
+print(product_catalog)
+
+# Expected Output:
 # {
 #     'P1001': ('Apple', 1.2),
 #     'P1002': ('Banana', 0.5),
 #     'P1003': ('Cherry', 0.75),
-#     'P1004': ('Date',1.5)
+#     'P1004': ('Date', 1.5)
 # }
-

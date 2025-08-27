@@ -1,21 +1,28 @@
 # test_organization.py
 import unittest
-from src.organisation import Organisation
-from src.contact import Contact
 
-# Step 1
+from src.contact import Contact
+from src.organisation import Organisation
+
+# Create an organization
 class TestOrganisation(unittest.TestCase):
     # test that we create a name
-    pass
-        # arrange
-       
-
+    # arrange
+    def test_add_organisation(self):
         # act
-   
-        #assert
+        org = Organisation('Johns Org')
+        # assert
+        self .assertEqual(org.name, 'Johns Org')
 
-    # def test_get_contacts(self):
-        
+    # pass
 
-if __name__ == '__main__':
-    unittest.main()
+    # Step 3 - test can add a contact
+    def test_can_add_a_contact(self):
+        # Create an organisation
+        org = Organisation('Johns Org')
+        # Create a contact
+        contact = Contact('John', 'test@example.com')
+        # Add contact to organisation
+        org.add_contact(contact)
+        # Check if contact is added to the organisation
+        self.assertIn(contact, org.contacts)

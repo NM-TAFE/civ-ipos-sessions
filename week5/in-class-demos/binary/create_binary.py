@@ -1,8 +1,8 @@
 # Creating a binary file example representing a 2x2 grid with RGB values for each point
 
 # Define the grid size
-width = 4
-height = 2
+width = 3
+height = 3
 
 # Define the RGB values for each point
 rgb_values = [

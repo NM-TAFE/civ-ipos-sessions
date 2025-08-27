@@ -1,5 +1,3 @@
-def greeter(name):
-    return f" Hello {name}"
+from src.greeter import greet
 
-
-print(greeter('John'))
+print(greet('John'))
