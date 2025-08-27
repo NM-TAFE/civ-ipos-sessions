@@ -35,3 +35,4 @@ i.e. the first item added to the queue is the first to be removed.
    - At the end of your file, create an instance of the `Queue` class.
    - Add some items using the `enqueue` method.
    - Remove and print items using the `dequeue` method.
+   - Retrieve the item at the front using the `peek` method.
