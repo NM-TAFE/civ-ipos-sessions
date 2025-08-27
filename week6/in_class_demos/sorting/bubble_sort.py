@@ -6,5 +6,5 @@ def bubble_sort(arr):
                 arr[inner], arr[inner+1] = arr[inner+1], arr[inner]
     return arr
 
-# Example usage
+# Example usage: https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/visualize/
 print(bubble_sort([64, 34, 25, 12, 22, 11, 90]))

@@ -16,6 +16,7 @@ def binary_search(day_to_search, target):
             left =  mid_point + 1
         else:
             right = mid_point - 1
+            
         # Note the number of ids printed
         print(id(day_to_search))
 

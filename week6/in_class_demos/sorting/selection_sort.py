@@ -9,5 +9,5 @@ def selection_sort(arr):
                 arr[index], arr[current_index] = arr[current_index], arr[index]
     return arr
 
-# Example usage
+# Example usage: https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/visualize/
 print(selection_sort([64, 34, 25, 12, 22, 11, 90]))
