@@ -32,5 +32,5 @@ def merge_sort(arr):
 
     return arr
 
-# Example usage
+# Example usage: https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/
 print(merge_sort([64, 34, 25, 12, 22, 11, 90]))

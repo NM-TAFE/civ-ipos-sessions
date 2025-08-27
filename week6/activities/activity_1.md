@@ -26,7 +26,12 @@ i.e. the last item added to the stack is the first to be removed.
 
    - Write an `is_empty` method that returns `True` if the stack is empty, otherwise `False`.
 
-6. **Test your Stack implementation:**
+6. **Add the `peek` method:**
+
+   - Write an `peek` method that returns the value at the top of the stack without removing it, otherwise `False`.
+
+7. **Test your Stack implementation:**
    - At the end of your file, create an instance of the `Stack` class.
    - Add some items using the `push` method.
    - Remove and print items using the `pop` method.
+   - Retrieve the item at the top using the `peek` method.

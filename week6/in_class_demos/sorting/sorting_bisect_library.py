@@ -10,7 +10,7 @@ print("Sorted list:", sorted_list)  # Result: [1, 2, 3, 5, 7, 9]
 # Using the bisect module
 # Inserting a new element into a sorted list (in order)
 bisect.insort(sorted_list, 6)
-print("Unsorted list id: ", id(sorted_list))
+print("Updated sorted list id: ", id(sorted_list))
 print("Sorted list after insertion:", sorted_list) # Result: [1, 2, 3, 5, 6, 7, 9]
 
 # Performing binary search in a sorted list
