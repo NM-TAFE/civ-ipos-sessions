@@ -2,52 +2,52 @@
 # # Convert the string "Hello" into different binary representations
 hello_str = "Hello"
 
-# # 1. Display "Hello" as binary
-# hello_binary = ' '.join(format(ord(char), '08b') for char in hello_str)
-# print("Binary representation of 'Hello':", hello_binary)
+# 1. Display "Hello" as binary
+hello_binary = ' '.join(format(ord(char), '08b') for char in hello_str)
+print("Binary representation of 'Hello':", hello_binary)
 
 # 2. Display "Hello" as hexadecimal
-# hello_hex = ' '.join(format(ord(char), '02x') for char in hello_str)
-# print("Hexadecimal representation of 'Hello':", hello_hex)
+hello_hex = ' '.join(format(ord(char), '02x') for char in hello_str)
+print("Hexadecimal representation of 'Hello':", hello_hex)
 
 # 3. Display "Hello" as escape hex format (used in strings)
-# hello_escape_hex = ''.join(f'Ox{format(ord(char), "02x")}' for char in hello_str)
-# print("Escape hex representation of 'Hello':", hello_escape_hex)
+hello_escape_hex = ''.join(f'Ox{format(ord(char), "02x")}' for char in hello_str)
+print("Escape hex representation of 'Hello':", hello_escape_hex)
 
-# # 4. Convert "Hello" into a bytes object
-# hello_bytes = bytes(hello_str, 'utf-8')
-# print("Bytes object of 'Hello':", hello_bytes)
+# 4. Convert "Hello" into a bytes object
+hello_bytes = bytes(hello_str, 'utf-8')
+print("Bytes object of 'Hello':", hello_bytes)
 
-# # 5. Convert "Hello" into a bytearray object
-# hello_bytearray = bytearray(hello_str, 'utf-8')
-# print("Bytearray object of 'Hello':", hello_bytearray)
+# 5. Convert "Hello" into a bytearray object
+hello_bytearray = bytearray(hello_str, 'utf-8')
+print("Bytearray object of 'Hello':", hello_bytearray)
 
-# # Understanding 0x48 and \x48
-# # Understanding 0x48 (Hexadecimal Number)
-# print(0x48)  # Output: 72 (decimal value of 0x48)
+# Understanding 0x48 and \x48
+# Understanding 0x48 (Hexadecimal Number)
+print(0x48)  # Output: 72 (decimal value of 0x48)
 
-# # Understanding \x48 (Escape Hex Notation)
-# print("\x48")  # Output: H (ASCII character for 0x48)
+# Understanding \x48 (Escape Hex Notation)
+print("\x48")  # Output: H (ASCII character for 0x48)
 
-# # Converting the RGB Color (160, 32, 240)
-# # Now, we do the same for the RGB color purple (160, 32, 240)
+# Converting the RGB Color (160, 32, 240)
+# Now, we do the same for the RGB color purple (160, 32, 240)
 purple_rgb = (160, 32, 240)
 
-# # 1. Display RGB components as binary
-# purple_binary = tuple(format(value, '08b') for value in purple_rgb)
-# print("Binary representation of RGB (160, 32, 240):", purple_binary)
+# 1. Display RGB components as binary
+purple_binary = tuple(format(value, '08b') for value in purple_rgb)
+print("Binary representation of RGB (160, 32, 240):", purple_binary)
 
-# # 2. Display RGB components as hexadecimal
-# purple_hex = tuple(format(value, '02x') for value in purple_rgb)
-# print("Hexadecimal representation of RGB (160, 32, 240):", purple_hex)
+# 2. Display RGB components as hexadecimal
+purple_hex = tuple(format(value, '02x') for value in purple_rgb)
+print("Hexadecimal representation of RGB (160, 32, 240):", purple_hex)
 
-# # 3. Display RGB as escape hex
-# purple_escape_hex = ''.join(f'\\x{format(value, "02x")}' for value in purple_rgb)
-# print("Escape hex representation of RGB (160, 32, 240):", purple_escape_hex)
+# 3. Display RGB as escape hex
+purple_escape_hex = ''.join(f'\\x{format(value, "02x")}' for value in purple_rgb)
+print("Escape hex representation of RGB (160, 32, 240):", purple_escape_hex)
 
-# # 4. Convert RGB values into a bytes object
-# purple_bytes = bytes(purple_rgb)
-# print("Bytes object of RGB (160, 32, 240):", purple_bytes)
+# 4. Convert RGB values into a bytes object
+purple_bytes = bytes(purple_rgb)
+print("Bytes object of RGB (160, 32, 240):", purple_bytes)
 
 # # 5. Convert RGB values into a bytearray object
 purple_bytearray = bytearray(purple_rgb)
