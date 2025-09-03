@@ -2,6 +2,8 @@ from unittest.mock import Mock, patch
 import unittest
 import requests
 
+# https://docs.python.org/3/library/unittest.mock-examples.html#
+
 # Function to be tested
 def get_weather(city, get_function=requests.get):
     response = get_function(f"https://api.weather.com/{city}")
@@ -20,7 +22,7 @@ class TestWeather(unittest.TestCase):
         }
 
         # Call the function with the mock
-        result = get_weather("Sydney", get=mock_get)
+        result = get_weather("Sydney", get_function=mock_get)
 
         # Assertions
         self.assertEqual(result, {"city": "Sydney", "temperature": 25})
