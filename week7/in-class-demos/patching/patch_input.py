@@ -1,6 +1,7 @@
 from unittest import TestCase
 from unittest.mock import patch
 
+# https://docs.python.org/3/library/unittest.mock-examples.html#patch-decorators
 def greet_user():
     name = input("Enter your name: ")
     return f"Hello, {name}!"
