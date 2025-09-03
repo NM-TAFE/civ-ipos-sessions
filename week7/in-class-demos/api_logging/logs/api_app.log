@@ -1,0 +1,40 @@
+2025-09-03 14:41:27,937 - DEBUG - Requesting weather data for coordinates: lat=-31.9505, lon=115.8605
+2025-09-03 14:41:27,938 - DEBUG - Starting new HTTPS connection (1): api.openweathermap.org:443
+2025-09-03 14:41:28,476 - DEBUG - https://api.openweathermap.org:443 "GET /data/2.5/weather?lat=-31.9505&lon=115.8605&appid=d5b5ea4324fe1fe5f575e96a650deac0&units=metric HTTP/1.1" 200 492
+2025-09-03 14:41:28,476 - INFO - Weather data received: {'coord': {'lon': 115.86, 'lat': -31.95}, 'weather': [{'id': 800, 'main': 'Clear', 'description': 'clear sky', 'icon': '01d'}], 'base': 'stations', 'main': {'temp': 20.65, 'feels_like': 20.15, 'temp_min': 20.65, 'temp_max': 20.65, 'pressure': 1014, 'humidity': 53, 'sea_level': 1014, 'grnd_level': 1010}, 'visibility': 10000, 'wind': {'speed': 6.81, 'deg': 204, 'gust': 5.82}, 'clouds': {'all': 0}, 'dt': 1756881642, 'sys': {'country': 'AU', 'sunrise': 1756852282, 'sunset': 1756893665}, 'timezone': 28800, 'id': 2066756, 'name': 'Maylands', 'cod': 200}
+2025-09-03 14:42:15,117 - DEBUG - Requesting weather data for coordinates: lat=-31.9505, lon=115.8605
+2025-09-03 14:42:15,118 - DEBUG - Starting new HTTPS connection (1): api.openweathermap.org:443
+2025-09-03 14:42:15,641 - DEBUG - https://api.openweathermap.org:443 "GET /data/2.5/weather?lat=-31.9505&lon=115.8605&appid=d5b5ea4324fe1fe5f575e96a65ac0&units=metric HTTP/1.1" 401 108
+2025-09-03 14:42:15,641 - ERROR - HTTP error occurred: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?lat=-31.9505&lon=115.8605&appid=d5b5ea4324fe1fe5f575e96a65ac0&units=metric
+2025-09-03 14:42:15,642 - ERROR - Traceback (most recent call last):
+  File "C:\Users\ROBERJ\Documents\civ-ipos-sessions\week7\in-class-demos\api_logging\4_api_logging.py", line 27, in get_weather
+    response.raise_for_status()  # Raises an HTTPError for bad responses
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ROBERJ\Documents\civ-ipos-sessions\week7\in-class-demos\api_logging\.venv\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?lat=-31.9505&lon=115.8605&appid=d5b5ea4324fe1fe5f575e96a65ac0&units=metric
+
+2025-09-03 14:42:59,206 - DEBUG - Requesting weather data for coordinates: lat=-31.9505, lon=115.8605
+2025-09-03 14:42:59,207 - DEBUG - Starting new HTTPS connection (1): api.openweathermap.org:443
+2025-09-03 14:42:59,727 - DEBUG - https://api.openweathermap.org:443 "GET /data/2.5/wear?lat=-31.9505&lon=115.8605&appid=d5b5ea4324fe1fe5f575e96a65ac0&units=metric HTTP/1.1" 401 108
+2025-09-03 14:42:59,727 - ERROR - HTTP error occurred: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/wear?lat=-31.9505&lon=115.8605&appid=d5b5ea4324fe1fe5f575e96a65ac0&units=metric
+2025-09-03 14:42:59,728 - ERROR - Traceback (most recent call last):
+  File "C:\Users\ROBERJ\Documents\civ-ipos-sessions\week7\in-class-demos\api_logging\4_api_logging.py", line 27, in get_weather
+    response.raise_for_status()  # Raises an HTTPError for bad responses
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ROBERJ\Documents\civ-ipos-sessions\week7\in-class-demos\api_logging\.venv\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/wear?lat=-31.9505&lon=115.8605&appid=d5b5ea4324fe1fe5f575e96a65ac0&units=metric
+
+2025-09-03 14:43:29,390 - DEBUG - Requesting weather data for coordinates: lat=-31.9505, lon=115.8605
+2025-09-03 14:43:29,391 - DEBUG - Starting new HTTPS connection (1): api.openweathermap.org:443
+2025-09-03 14:43:29,919 - DEBUG - https://api.openweathermap.org:443 "GET /data/2.5/weatr?lat=-31.9505&lon=115.8605&appid=d5b5ea4324fe1fe5f575e96a650deac0&units=metric HTTP/1.1" 404 40
+2025-09-03 14:43:29,919 - ERROR - HTTP error occurred: 404 Client Error: Not Found for url: https://api.openweathermap.org/data/2.5/weatr?lat=-31.9505&lon=115.8605&appid=d5b5ea4324fe1fe5f575e96a650deac0&units=metric
+2025-09-03 14:43:29,920 - ERROR - Traceback (most recent call last):
+  File "C:\Users\ROBERJ\Documents\civ-ipos-sessions\week7\in-class-demos\api_logging\4_api_logging.py", line 27, in get_weather
+    response.raise_for_status()  # Raises an HTTPError for bad responses
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ROBERJ\Documents\civ-ipos-sessions\week7\in-class-demos\api_logging\.venv\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.openweathermap.org/data/2.5/weatr?lat=-31.9505&lon=115.8605&appid=d5b5ea4324fe1fe5f575e96a650deac0&units=metric
+

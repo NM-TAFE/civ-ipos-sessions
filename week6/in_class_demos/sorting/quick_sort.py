@@ -20,7 +20,7 @@ def quick_sort(numbers):
     
     for num in numbers: 
         if num > pivot_value:
-            greater_tahn_pivot.append(num)
+            greater_than_pivot.append(num)
     
     # recursion
     return quick_sort(smaller_than_pivot) + equal_to_pivot + quick_sort(greater_than_pivot)
