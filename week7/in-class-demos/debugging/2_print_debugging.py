@@ -8,14 +8,14 @@ import traceback
 # logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Configuring logging to write to a file
-logging.basicConfig(filename='./logs/_app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+# logging.basicConfig(filename='./logs/_app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Logging levels
-logging.debug("This is a debug message")
-logging.info("This is an info message")
-logging.warning("This is a warning message")
-logging.error("This is an error message")
-logging.critical("This is a critical message")
+# logging.debug("This is a debug message")
+# logging.info("This is an info message")
+# logging.warning("This is a warning message")
+# logging.error("This is an error message")
+# logging.critical("This is a critical message")
 
 # Toggle for debug prints
 debug = True
@@ -25,7 +25,7 @@ def log_message(message):
     caller = inspect.stack()[1]
     timestamp = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     pprint.pprint(caller) # test for the method sending the error
-    logging.info(f"Log Message output: [{timestamp}] {caller.function} (line {caller.lineno}): {message}")
+    # logging.info(f"Log Message output: [{timestamp}] {caller.function} (line {caller.lineno}): {message}")
 
 def conditional_print(message):
     """Prints a message only if debugging is enabled."""
@@ -34,7 +34,7 @@ def conditional_print(message):
 
 def process_numbers(numbers):
     """Processes a list of numbers by filtering and modifying them."""
-    log_message(f"Received numbers: {numbers}")
+    # log_message(f"Received numbers: {numbers}")
     
     try:
         # Step 1: Filter out negative numbers
@@ -50,7 +50,7 @@ def process_numbers(numbers):
         
         return modified
     except Exception as e:
-        logging.error(f"Error processing numbers: {e}")
+        # logging.error(f"Error processing numbers: {e}")
         traceback.print_exc()
         return None
 
@@ -60,9 +60,9 @@ numbers = [5, -3, 2, -8, 7, 10, -1, 0]
 
 try:
     result = process_numbers(numbers)
-    log_message(f"Final result: {result}") # change to incorrect variable name
+    # log_message(f"Final result: {result}") # change to incorrect variable name
 except Exception as error:
-    logging.error(f"An unexpected error occurred: {error}")
+    # logging.error(f"An unexpected error occurred: {error}")
     traceback.print_exc()
     traceback_string = traceback.format_exc()
-    logging.error("Unhandled exception: %s\n%s", error, traceback_string)
+    # logging.error("Unhandled exception: %s\n%s", error, traceback_string)
