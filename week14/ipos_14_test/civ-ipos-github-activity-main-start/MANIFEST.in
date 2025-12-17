@@ -1,2 +1,0 @@
-recursive include flask_tic_tac_toe/templates *
-recursive-include flask_tic_tac_toe/static *

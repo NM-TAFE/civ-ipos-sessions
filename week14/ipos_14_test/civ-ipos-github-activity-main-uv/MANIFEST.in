@@ -1,3 +1,0 @@
-graft flask_tic_tac_toe/templates
-graft flask_tic_tac_toe/static
-include README.md
