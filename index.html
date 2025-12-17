@@ -1,30 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CIV IPOS Sessions – 2025S2</title>
+
+    <!-- Bulma -->
     <link
       rel="stylesheet"
-     @0.9.4/css/bulma.min.css
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <style>
-      .card:hover {
-        transform: translateY(-2px);
-        transition: transform 0.15s ease;
+      a.card-link {
+        display: block;
+        height: 100%;
+        color: inherit;
       }
-      .is-gapless .column {
-        padding-top: 0;
-        padding-bottom: 0;
+
+      .card {
+        height: 100%;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(10, 10, 10, 0.15);
+      }
+
+      .week-tag {
+        margin-top: 0.5rem;
       }
     </style>
   </head>
+
   <body>
-    <!-- Hero Banner -->
+    <!-- Hero -->
     <section class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">CIV IPOS Sessions 2025S2</h1>
+          <h1 class="title">CIV IPOS Sessions 2025S2</h1>
           <h2 class="subtitle">
             Weekly sessions complementing Blackboard and in-class activities
           </h2>
@@ -32,13 +55,10 @@
       </div>
     </section>
 
-    <!-- Top nav bar with Weeks dropdown -->
+    <!-- Navbar -->
     <nav class="navbar is-light" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
-          https://github.com/NM-TAFE/civ-ipos-sessions
-            CIV IPOS
-          </a>
           <a
             role="button"
             class="navbar-burger"
@@ -56,71 +76,97 @@
           <div class="navbar-start">
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">Weeks</a>
-              <div id="weeksDropdown" class="navbar-dropdown">
-                <!-- Populated by JS: Week 1–15 -->
-              </div>
+              <div id="weeksDropdown" class="navbar-dropdown"></div>
             </div>
-            https://github.com/NM-TAFE/civ-ipos-sessions/tree/main/resources
+
+            <a
+              class="navbar-item"
+              href="https://github.com/NM-TAFE/civ-ipos-sessions/tree/main/resources"
+            >
               Resources
             </a>
-            https://github.com/NM-TAFE/civ-ipos-sessions/tree/main/assessments
+            <a
+              class="navbar-item"
+              href="https://github.com/NM-TAFE/civ-ipos-sessions/tree/main/assessments"
+            >
               Assessments
             </a>
-            https://github.com/NM-TAFE/civ-ipos-sessions/tree/main/org
-              Org
+            <a
+              class="navbar-item"
+              href="https://github.com/NM-TAFE/civ-ipos-sessions/tree/main/org"
+            >
+              Org &amp; Coding Standards
             </a>
           </div>
         </div>
       </div>
     </nav>
 
-    <!-- Intro section -->
+    <!-- Intro -->
     <section class="section">
       <div class="container">
         <p class="content is-medium">
           This repository provides weekly session content—lectures, demos and
           practical activities—to support your learning experience. Sessions are
-          updated weekly (sometimes multiple times per session) across the
-          “weekX” folders.
+          updated weekly across the <code>weekX</code> folders.
         </p>
       </div>
     </section>
 
-    <!-- Cards Section -->
+    <!-- Routes -->
     <section class="section">
       <div class="container">
-        <h3 class="title is-4">Session Weeks &amp; Routes</h3>
+        <h3 class="title is-4">Session Routes</h3>
 
-        <!-- Resource / Assessments / Org cards -->
         <div class="columns is-multiline">
           <div class="column is-one-quarter-desktop is-half-tablet">
-            https://github.com/NM-TAFE/civ-ipos-sessions/tree/main/resources
+            <a
+              class="card-link"
+              href="https://github.com/NM-TAFE/civ-ipos-sessions/tree/main/resources"
+            >
               <div class="card">
                 <div class="card-content">
-                  <p class="title is-5">Resources</p>
-                  <p class="subtitle is-6">Slides, handouts &amp; reference docs</p>
+                  <p class="title is-5">
+                    <span class="icon"><i class="fas fa-book"></i></span>
+                    Resources
+                  </p>
+                  <p class="subtitle is-6">Slides, handouts &amp; references</p>
                 </div>
               </div>
             </a>
           </div>
 
           <div class="column is-one-quarter-desktop is-half-tablet">
-            https://github.com/NM-TAFE/civ-ipos-sessions/tree/main/assessments
+            <a
+              class="card-link"
+              href="https://github.com/NM-TAFE/civ-ipos-sessions/tree/main/assessments"
+            >
               <div class="card">
                 <div class="card-content">
-                  <p class="title is-5">Assessments</p>
-                  <p class="subtitle is-6">Tasks, briefs &amp; submission info</p>
+                  <p class="title is-5">
+                    <span class="icon"
+                      ><i class="fas fa-clipboard-check"></i
+                    ></span>
+                    Assessments
+                  </p>
+                  <p class="subtitle is-6">Tasks, briefs &amp; submissions</p>
                 </div>
               </div>
             </a>
           </div>
 
           <div class="column is-one-quarter-desktop is-half-tablet">
-            https://github.com/NM-TAFE/civ-ipos-sessions/tree/main/org
+            <a
+              class="card-link"
+              href="https://github.com/NM-TAFE/civ-ipos-sessions/tree/main/org"
+            >
               <div class="card">
                 <div class="card-content">
-                  <p class="title is-5">Org</p>
-                  <p class="subtitle is-6">Unit outlines, schedules &amp; admin</p>
+                  <p class="title is-5">
+                    <span class="icon"><i class="fas fa-sitemap"></i></span>
+                    Organisation
+                  </p>
+                  <p class="subtitle is-6">Unit outlines &amp; admin</p>
                 </div>
               </div>
             </a>
@@ -129,10 +175,9 @@
 
         <hr />
 
-        <!-- Week cards grid -->
-        <div id="weeksGrid" class="columns is-multiline">
-          <!-- Week cards (1–15) will be generated by JS -->
-        </div>
+        <!-- Weeks -->
+        <h3 class="title is-4">Weekly Sessions</h3>
+        <div id="weeksGrid" class="columns is-multiline"></div>
       </div>
     </section>
 
@@ -140,115 +185,100 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          Maintained by North Metropolitan TAFE. Code licensed under MIT.
-          <span id="lastUpdated">Last updated Jan 29 2025.</span>
+          Maintained by North Metropolitan TAFE. Code licensed under MIT.
+          <span id="lastUpdated"></span>
         </p>
         <p>
-          https://github.com/NM-TAFE/civ-ipos-sessionsGitHub repo</a>
+          <a href="https://github.com/NM-TAFE/civ-ipos-sessions">GitHub repo</a>
         </p>
       </div>
     </footer>
 
-    <!-- Scripts: generate weeks 1–15 based on Week 1 URL template -->
+    <!-- Scripts -->
     <script>
-      // Burger toggle for mobile navbar
-      (function () {
-        const burgers = Array.prototype.slice.call(
-          document.querySelectorAll(".navbar-burger"),
-          0
-        );
-        burgers.forEach((el) => {
-          el.addEventListener("click", () => {
-            const target = el.dataset.target;
-            const menu = document.getElementById(target);
-            el.classList.toggle("is-active");
-            menu.classList.toggle("is-active");
-          });
+      // Navbar burger
+      document.querySelectorAll(".navbar-burger").forEach((burger) => {
+        burger.addEventListener("click", () => {
+          const target = document.getElementById(burger.dataset.target);
+          burger.classList.toggle("is-active");
+          target.classList.toggle("is-active");
         });
-      })();
+      });
 
-      // Week URL template using week1 as base
       const baseWeekUrl =
         "https://github.com/NM-TAFE/civ-ipos-sessions/tree/main/week";
+
       const weekTitles = {
         1: "Introduction & Foundations",
-        // Optional: set known titles; fallback to "Weekly Content"
-        2: "Weekly Content",
-        3: "Weekly Content",
-        4: "Weekly Content",
-        5: "Weekly Content",
-        6: "Weekly Content",
-        7: "Weekly Content",
-        8: "Weekly Content",
-        9: "Weekly Content",
-        10: "Weekly Content",
-        11: "Weekly Content",
-        12: "Weekly Content",
-        13: "Weekly Content",
-        14: "Weekly Content",
-        15: "Weekly Content",
+        2: "Intermediate Programming – Modularity & References",
+        3: "Intermediate Programming – 2D Data Structures",
+        4: "Unit Testing & Portfolio (Part 1)",
+        5: "Intermediate Programming – Binary File Handling",
+        6: "Data Structures & Binary Search",
+        7: "Documentation & Debugging",
+        8: "Test Automation & Packaging",
+        9: "Reusability, Libraries & Advanced Topics",
+        10: "Term 1 Revision & Catch-Up",
+        11: "Introduction to Open Source",
+        12: "GitHub Collaboration with OOP",
+        13: "Packaging & Distribution",
+        14: "Open Source Contribution",
+        15: "CI/CD & Delivery Documentation",
       };
 
-      function createWeekCard(weekNum) {
+      function createWeekCard(week) {
         const col = document.createElement("div");
         col.className = "column is-one-quarter-desktop is-half-tablet";
 
-        const link = document.createElement("a");
-        link.href = `${baseWeekUrl}${weekNum}`;
-
-        const card = document.createElement("div");
-        card.className = "card";
-
-        const content = document.createElement("div");
-        content.className = "card-content";
-
-        const title = document.createElement("p");
-        title.className = "title is-5";
-        title.textContent = `Week ${weekNum}`;
-
-        const subtitle = document.createElement("p");
-        subtitle.className = "subtitle is-6";
-        subtitle.textContent = weekTitles[weekNum] || "Weekly Content";
-
-        content.appendChild(title);
-        content.appendChild(subtitle);
-        card.appendChild(content);
-        link.appendChild(card);
-        col.appendChild(link);
+        col.innerHTML = `
+        <a class="card-link" href="${baseWeekUrl}${week}">
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-5">
+                <span class="icon"><i class="fas fa-calendar-week"></i></span>
+                Session ${week}
+              </p>
+              <p class="subtitle is-6">
+                ${weekTitles[week]}
+              </p>
+              <div class="tags week-tag">
+                <span class="tag is-info is-light">Week ${week}</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      `;
         return col;
       }
 
-      function createWeekDropdownItem(weekNum) {
+      function createWeekDropdownItem(week) {
         const a = document.createElement("a");
         a.className = "navbar-item";
-        a.href = `${baseWeekUrl}${weekNum}`;
-        a.textContent = `Week ${weekNum}`;
+        a.href = `${baseWeekUrl}${week}`;
+        a.textContent = `Session ${week} – ${weekTitles[week]}`;
         return a;
       }
 
-      // Populate 1–15
-      (function populateWeeks() {
-        const weeksGrid = document.getElementById("weeksGrid");
-        const weeksDropdown = document.getElementById("weeksDropdown");
-        for (let i = 1; i <= 15; i++) {
-          weeksGrid.appendChild(createWeekCard(i));
-          weeksDropdown.appendChild(createWeekDropdownItem(i));
-        }
-      })();
+      // Populate weeks
+      const weeksGrid = document.getElementById("weeksGrid");
+      const weeksDropdown = document.getElementById("weeksDropdown");
 
-      // Optional: set a dynamic "Last updated" stamp
-      (function setLastUpdated() {
-        const el = document.getElementById("lastUpdated");
-        if (!el) return;
-        // Keep your explicit date if preferred; otherwise show today's date
-        const today = new Date();
-        const options = {
+      for (let i = 1; i <= 15; i++) {
+        weeksGrid.appendChild(createWeekCard(i));
+        weeksDropdown.appendChild(createWeekDropdownItem(i));
+      }
+
+      // Last updated
+      const lastUpdated = document.getElementById("lastUpdated");
+      const today = new Date();
+      lastUpdated.textContent =
+        " Last updated " +
+        today.toLocaleDateString(undefined, {
           year: "numeric",
           month: "short",
           day: "numeric",
-        };
-        el.textContent = `Last updated ${today.toLocaleDateString(undefined, options)}.`;
-      })();
+        }) +
+        ".";
     </script>
   </body>
 </html>
