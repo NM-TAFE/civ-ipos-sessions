@@ -17,9 +17,6 @@ print(f"\nWidth: {width}")
 print(f"Height: {height}")
 
 # TODO Extract and print RGB values
-
-
-
 # print("\nRGB Values:")
 # for i, rgb in enumerate(rgb_values):
 #     print(f"Point {i}: {rgb}")

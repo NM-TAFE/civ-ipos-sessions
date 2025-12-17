@@ -30,7 +30,7 @@ class Graph:
 
     def add_connection(self, location1_name, location2_name):
         pass
-        # Search the dicitonary keys for the two locations
+        # Search the dictionary keys for the two locations
 
             # Add the connection bidirectionally
             # If both keys are found connect them by adding each to the Locations list

@@ -1,7 +1,5 @@
-# TODO Step 4 create a project
+# TODO Step 4 create a project class
 # project.py
-
-        # Challenge solution
  
 
     # TODO Step 5 add contacts

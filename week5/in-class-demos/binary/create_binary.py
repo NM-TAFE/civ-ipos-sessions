@@ -1,5 +1,4 @@
 # Creating a binary file example representing a 2x2 grid with RGB values for each point
-
 # Define the grid size
 width = 3
 height = 3
