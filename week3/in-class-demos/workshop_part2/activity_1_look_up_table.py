@@ -5,13 +5,11 @@
 # Define a function that creates the product lookup dictionary
 def build_catalogue(product_code_grid, product_data_grid):
     # TODO: Initialise an empty dictionary to store the catalogue
-    product_catalogue = {}
+
     # TODO: Iterate over the outer keys (e.g., rows or categories)
-    for outer_key in product_code_grid:
+
         # TODO: Iterate over the inner keys (e.g., individual product codes)
-        print(outer_key)
-        for inner_key in product_code_grid[outer_key]:
-            print(inner_key)
+ 
             # TODO: Retrieve the product code
 
             # TODO: Use the corresponding product data as the value

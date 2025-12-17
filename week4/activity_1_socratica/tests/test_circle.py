@@ -3,7 +3,8 @@
 import unittest  # unit testing framework
 from math import pi
 
-from src.circle import circle_area  # importing the function we wrote in the other file
+# TODO change to absolute imports the function from the other file
+from circle import circle_area 
 
 
 class TestCircleArea(unittest.TestCase):

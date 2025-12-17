@@ -10,8 +10,8 @@ def random_date(start_date, end_date):
 
 # Generate sample data
 products = ['Product A', 'Product B', 'Product C', 'Product D']
-start_date = datetime(2023, 1, 1)
-end_date = datetime(2023, 12, 31)
+start_date = datetime(2026, 1, 1)
+end_date = datetime(2026, 12, 31)
 
 sales_data = []
 

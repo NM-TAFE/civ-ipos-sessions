@@ -4,6 +4,9 @@ from src.project import *
 
 
 def main():
+    """
+    This is our application purpose this is our startiong point
+    """
     org = Organisation("NM Tafe")
 
     contact = Contact("John Robertson", "john@example.com")

@@ -1,9 +1,11 @@
-# main.py 
-# Organisation data 
+# In you groups draw a block UML diagram of how this application might work when split into classes
+# What methods would you need to manage the relationship between classes.
 
-# Contact data 
+# Organisation data
+
+# Contact data
   
-# Project data 
+# Project data
 
 # Function to add a contact to an organisation 
 

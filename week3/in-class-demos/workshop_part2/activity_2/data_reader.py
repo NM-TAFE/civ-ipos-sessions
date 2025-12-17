@@ -4,7 +4,7 @@ import csv
 
 # Function to read data from CSV file
 def read_sales_data(filename):
-    # Task 1: Read data from CSV file
+    # Read data from CSV file
     sales_data =[]
 
     with open (filename, 'r') as csvfile:
@@ -18,15 +18,16 @@ def read_sales_data(filename):
     return sales_data
 
 sales_data = read_sales_data('sales_data_v2.csv')
-# Task 2: Calculate total revenue for each product
+# Calculate total revenue for each product
 product_revenue = {}
 for sale in sales_data:
     product = sale['Product']
     revenue = sale['Total Revenue']
     product_revenue[product] = product_revenue.get(product, 0)
-# Task 3: Identify the product with the highest total units sold
+    
+# TODO: Identify the product with the highest total units sold
 
-# Task 4: Calculate average unit price for each product - watch out for division by zero
+# TODO: Calculate average unit price for each product - watch out for division by zero
 
 
 sales_data = read_sales_data('sales_data_v2.csv')

@@ -1,5 +1,7 @@
 '''Basic unit test and how to get it working
-in PyCharm'''
+in PyCharm
+TODO Use absolute imports for all your imports 
+'''
 
 # Put in src/ folder as greeter.py
 # **Remember** to mark directory src/ as
