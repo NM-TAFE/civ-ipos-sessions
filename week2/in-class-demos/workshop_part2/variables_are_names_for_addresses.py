@@ -51,14 +51,14 @@ input()
 # do not need to change
 # """)
 
-# myList = [3, [55, 44], (4, 8, [100, 120])]
-# print(id(myList[2]))
-# newList = myList[:]
-# print(id(newList))
-# print(id(myList))
-# print(myList == newList)
-# print(myList is newList)
-# print(myList[2][2].append(180))
-# # myList[2] = [100, 150, 200]
-# print(myList[2])
+myList = [3, [55, 44], (4, 8, [100, 120])]
+print(f"my_list id(myList[2])")
+newList = myList[:]
+print(f"new_list: {id(newList)}")
+print(f"my_list: {id(myList)}")
+print(f"myList == newList: {myList == newList}")
+print(f"myList is newList: {myList is newList}")
+print(myList[2][2].append(180))
+myList[2] = [100, 150, 200]
+print(myList[2])
 
