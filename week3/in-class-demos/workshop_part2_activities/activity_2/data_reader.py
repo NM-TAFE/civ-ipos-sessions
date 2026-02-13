@@ -17,7 +17,8 @@ def read_sales_data(filename):
     
     return sales_data
 
-sales_data = read_sales_data('sales_data_v2.csv')
+sales_data = read_sales_data('./sales_data.csv')
+
 # Calculate total revenue for each product
 product_revenue = {}
 for sale in sales_data:
@@ -29,8 +30,6 @@ for sale in sales_data:
 
 # TODO: Calculate average unit price for each product - watch out for division by zero
 
-
-sales_data = read_sales_data('sales_data_v2.csv')
 # Display results
 print("Total revenue for each product:")
 for product, revenue in product_revenue.items():
