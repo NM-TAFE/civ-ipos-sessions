@@ -5,7 +5,7 @@ from contact_module import create_contact
 
 class TestCreateContact(TestCase):
     @patch('contact_module.Contact')  # Mock the Contact class in the contact_module
-    def test_create_contact(self, MockContact):
+    def test_create_contact(self, mock_contact):
         """
         Ensure create_contact correctly instantiates a Contact object
         with the provided name and email, and returns it.
@@ -18,10 +18,10 @@ class TestCreateContact(TestCase):
         contact = create_contact(name, email)
 
         # Assert: Verify Contact was instantiated with correct arguments
-        MockContact.assert_called_once_with(name, email)
+        mock_contact.assert_called_once_with(name, email)
 
         # Assert: The returned object is the mocked instance
-        self.assertEqual(contact, MockContact.return_value)
+        self.assertEqual(contact, mock_contact.return_value)
 
 
 if __name__ == "__main__":
