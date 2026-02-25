@@ -4,7 +4,7 @@ import unittest  # unit testing framework
 from math import pi
 
 # TODO change to absolute imports the function from the other file
-from circle import circle_area 
+from src.circle import circle_area
 
 
 class TestCircleArea(unittest.TestCase):
@@ -19,7 +19,7 @@ class TestCircleArea(unittest.TestCase):
         self.assertRaises(ValueError, circle_area, -2)
 
     # # uncomment these at end of video and add the snippet in snippet.py to circle.py to pass these tests
-    # def test_types(self):
-    #     self.assertRaises(TypeError, circle_area, 3 + 5j)
-    #     self.assertRaises(TypeError, circle_area, True)
-    #     self.assertRaises(TypeError, circle_area, 'radius')
+    def test_types(self):
+        self.assertRaises(TypeError, circle_area, 3 + 5j)
+        self.assertRaises(TypeError, circle_area, True)
+        self.assertRaises(TypeError, circle_area, 'radius')
