@@ -1,11 +1,14 @@
 ## Activity 1 Instructions
-
+### Step 1
 - Using only required folder structure
 - Write a function that calculates the sum of two numbers
 - Call it add or add2, not sum (that is a built-in function)
-- Include a docstring!
+- Include a docstring that describes:
+  - the function purpose, 
+  - what it returns(incl. **type**)
+  - what error types it might raise
 
-## Step 2
+### Step 2
 
 - Write the unit tests that check:
 - that correct values are calculated for integer, floating point, and complex numbers (e.g., 2 - 1j is complex)

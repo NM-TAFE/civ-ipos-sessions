@@ -1,17 +1,16 @@
 import unittest
-from src.calculator import add # Note the absolute import
+
+# TODO Use  the absolute import
+# from src.calculator import add
+
 
 class TestaddFunction(unittest.TestCase):
-
     pass
     # Types
 
-
     # float
- 
 
     # complex
-
 
     # TODO use case - whats left to test???
     # string
@@ -19,13 +18,14 @@ class TestaddFunction(unittest.TestCase):
     # collections other objects
     # null values
 
-        # arrange
+    # arrange
 
-            # act - type
-    
-            # act - type
-  
-        # assert
+    # act - type
+
+    # act - type
+
+    # assert
+
 
 if __name__ == "__main__":
     unittest.main()

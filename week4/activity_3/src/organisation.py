@@ -1,9 +1,7 @@
-# organisation.py
 class Organisation:
-    # TODO: Step1  attributes for org
+    """An organisation has many contacts"""
     pass
 
-    # TODO Step 3 get & set contacts (add and retrieve)
+    # TODO: Step1 add attributes for org
 
-    # TODO behaviours for org: addContact()
-    # many contacts
+    # TODO: Step 3 get & set contacts (add and retrieve - addContact())
