@@ -5,6 +5,7 @@ from src.contact import Contact
 class TestContact(unittest.TestCase):
     # Step 2
     def test_contact_creation(self):
+        pass
         # Create a contact
 
         # Check if attributes are set correctly
