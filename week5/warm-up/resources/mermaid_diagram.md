@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
     class Organisation {
         - name: str
@@ -24,3 +25,4 @@ classDiagram
     Organisation --> Contact : "has many"
     Organisation --> Project : "owns"
     Project --> Contact : "has many"
+```
