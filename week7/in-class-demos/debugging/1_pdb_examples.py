@@ -1,7 +1,6 @@
 # example 1
 # filename = __file__
-# import pdb; pdb.set_trace()
-# breakpoint()L
+# breakpoint()
 
 # print(f'path = {filename}')
 
@@ -14,7 +13,6 @@
 # r (return): Continue execution until the current function returns.
 
 # import os
-# import pdb; pdb.set_trace()
 
 # def get_path(file_name):
 #     """Return file's path or empty string if no path."""
@@ -44,7 +42,6 @@
 #     return head
 #
 #q
-# import pdb; pdb.set_trace()
 # filename = __file__
 # filename_path = get_path(filename)
 # print(f'path = {filename_path}')
