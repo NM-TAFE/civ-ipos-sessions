@@ -8,14 +8,14 @@ import traceback
 # logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Configuring logging to write to a file
-logging.basicConfig(filename='./logs/_app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+# logging.basicConfig(filename='./logs/_app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Logging levels
-logging.debug("This is a debug message")
-logging.info("This is an info message")
-logging.warning("This is a warning message")
-logging.error("This is an error message")
-logging.critical("This is a critical message")
+# logging.debug("This is a debug message")
+# logging.info("This is an info message")
+# logging.warning("This is a warning message")
+# logging.error("This is an error message")
+# logging.critical("This is a critical message")
 
 # Toggle for debug prints
 debug = True
@@ -34,19 +34,19 @@ def conditional_print(message):
 
 def process_numbers(numbers):
     """Processes a list of numbers by filtering and modifying them."""
-    log_message(f"Received numbers: {numbers}")
+    # log_message(f"Received numbers: {numbers}")
     
     try:
         # Step 1: Filter out negative numbers
-        filtered = [num for num in numbers if num >= 0]
+        filtered = [number for number in numbers if number >= 0]
         conditional_print(f"Filtered non-negative numbers: {filtered}")
 
         # Step 2: Multiply each remaining number by 2
-        modified = [num * 2 for num in filtered]
+        modified = [number * 2 for number in filtered]
         conditional_print(f"Modified numbers (doubled): {modified}")
 
         # Print detailed structure of modified numbers
-        pprint.pp(modified)
+        pprint.pp(f"Using the ppprint module: {modified}")
         
         return modified
     except Exception as e:
@@ -60,7 +60,7 @@ numbers = [5, -3, 2, -8, 7, 10, -1, 0]
 
 try:
     result = process_numbers(numbers)
-    log_message(f"Final result: {result}") # change to incorrect variable name
+    # log_message(f"Final result: {result}") # change to incorrect variable name
 except Exception as error:
     logging.error(f"An unexpected error occurred: {error}")
     traceback.print_exc()
